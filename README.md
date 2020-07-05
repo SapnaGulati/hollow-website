@@ -1,3 +1,4 @@
+![Django CI](https://github.com/CodeAndCoffee55/hollow-website/workflows/Django%20CI/badge.svg?branch=develop)
 # Hollow's website (created by Code & Coffee 55)
 
 GitHub repository for Hollow's website. This repository contains all files needed to see and integrate the original website with the functions discussed during the initial phase of the project. 
