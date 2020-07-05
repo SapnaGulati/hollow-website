@@ -1,0 +1,9 @@
+# Virtual environments
+/venv/
+/env
+
+# SQLite3 database (we will use PostgreSQL or MySQL in the future, for initial development we can use SQLite3 for fast development)
+/db.sqlite3
+
+# Initially, migratins is not version controlled (only when we start using the website in production)
+/website/migrations
