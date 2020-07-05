@@ -7,3 +7,6 @@
 
 # Initially, migratins is not version controlled (only when we start using the website in production)
 /website/migrations
+
+# JetBrains files
+/.idea
