@@ -18,7 +18,7 @@ The project is currently in development.
 
 Clone  the project on your machine and change the directory : 
 ```bash
-$ git clone git@github.com:We-Are-One-CS/intranet.git
+$ git clone git@github.com:CodeAndCoffee55/hollow-website.git
 $ cd intranet/
 ```
 [Create](https://www.guru99.com/postgresql-create-database.html) the database:
