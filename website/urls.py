@@ -11,6 +11,7 @@ urlpatterns = [
     path('indiqueeganhe/', views.ReferAndWinView.as_view, name='referandwin'),
     path('comofunciona', views.HowItWorksView.as_view, name='howitworks'),
     path('quemsomos', views.WhoWeAreView.as_view, name='whoweare'),
-    path('contato', views.ContactView.as_view, name='contact')
+    path('contato', views.ContactView.as_view, name='contact'),
+    path('trabalheconosco', views.WorkWithUsView.as_view, name='workwithus')
 
 ]
