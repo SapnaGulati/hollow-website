@@ -1,24 +1,31 @@
-{%load static%}
+{% load static %}
 
 <header class="header header-absolute">
-  <!-- Navbar-->
-  <nav class="navbar navbar-expand-lg bg-transparent navbar-light navbar-airy bg-hover-white bg-fixed-white navbar-hover-light navbar-fixed-light">
-    <div class="container-fluid">
-      <!-- Navbar Header  -->
-      <a href="{% url 'index' %}" class="navbar-brand">
-        <img src="{% static 'website/img/logo_hollow.png'%}" class="img-hollow" alt="logo_hollow">
-      </a>
-      <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-      <!-- Navbar Collapse -->
-      <div id="navbarCollapse" class="collapse navbar-collapse">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a href="{% url 'index' %}" class="nav-link ">Indique e ganhe</a></li>
-          <li class="nav-item"><a href="{% url 'index' %}" class="nav-link yellow-hollow">Como funciona</a></li>
-          <li class="nav-item "><a href="{% url 'index' %}" class="nav-link">Fale conosco</a></li>
-          <li class="nav-item "><a href="{% url 'index' %}" class="nav-link">Login/Cadastro</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- /Navbar -->
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-light navbar-airy bg-hover-white bg-fixed-white navbar-hover-light navbar-fixed-light">
+        <div class="container-fluid">
+            <!-- Navbar Header  -->
+            <a href="{% url 'index' %}" class="navbar-brand">
+                <img src="{% static 'website/img/logo_hollow.png' %}" class="img-hollow" alt="logo_hollow">
+            </a>
+            <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                    aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i
+                    class="fa fa-bars"></i></button>
+            <!-- Navbar Collapse -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="{% url 'referandwin' %}" class="nav-link ">Indique e ganhe</a></li>
+                    <li class="nav-item"><a href="{% url 'howitworks' %}" class="nav-link yellow-hollow">Como
+                        funciona</a></li>
+                    <li class="nav-item "><a href="{% url 'contact' %}" class="nav-link">Fale conosco</a></li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item "><a href="{% url 'logout' %}" class="nav-link">Logout</a></li>
+                    {% else %}
+                    <li class="nav-item "><a href="{% url 'login' %}" class="nav-link">Login/Cadastro</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /Navbar -->
 </header>
