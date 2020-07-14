@@ -112,3 +112,8 @@ class WhoWeAreView(generic.ListView):
 class ContactView(generic.ListView):
     def as_view(request):
         return render(request, 'website/contact.html')
+
+
+class WorkWithUsView(generic.ListView):
+    def as_view(request):
+        return render(request, 'website/workwithus.html')
