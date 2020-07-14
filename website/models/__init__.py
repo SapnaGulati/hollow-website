@@ -1,1 +1,1 @@
-from website.models.user import *
+from website.models.user import User
