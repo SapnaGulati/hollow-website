@@ -1,3 +1,12 @@
+.center{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
 div.image-header{
     position: relative;
     top: -150px;
@@ -9,3 +18,60 @@ div.image-header{
 div.image-header img{
     width: 100%;
 }
+
+div.weare-text-1{
+    position: relative;
+    top: -100px;
+    width: 81%;
+    height: auto;
+    margin-left: 10%;
+}
+
+div.weare-text-1 p{
+    font-family: "League Spartan Bold";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 1;
+    color: black;
+}
+
+/*****************weare-section-1*********************/
+section.weare-section-1{
+    position: relative;
+    top: -50px;
+	padding: 0px 1%;
+}
+
+section.weare-section-1 div.center h2{
+	text-align: center;
+	color: #E8C854;
+    font-size: 35px;
+	font-weight: bold;
+    font-family: "League Spartan Bold";
+}
+
+section.weare-section-1 .container-section{
+	margin-top: 10px;
+	text-align: center;
+}
+
+section.weare-section-1 .container-single{
+	float: left;
+	width: 33.333%;
+	padding: 10px;
+}
+
+section.weare-section-1 .container-single p{
+	display: inline-block;
+	text-align: justify;
+    text-align-last: center;
+    line-height: 1;
+	padding: 0px 20px;
+    font-size: 20px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #868589;
+}
+/**************************************/
