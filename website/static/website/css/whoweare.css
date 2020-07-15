@@ -1,10 +1,10 @@
 .center{
-	width: 100%;
-	margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .clear{
-	clear: both;
+    clear: both;
 }
 
 div.image-header{
@@ -41,34 +41,34 @@ div.weare-text-1 p{
 section.weare-section-1{
     position: relative;
     top: -50px;
-	padding: 0px 1%;
+    padding: 0px 1%;
 }
 
 section.weare-section-1 div.center h2{
-	text-align: center;
-	color: #E8C854;
+    text-align: center;
+    color: #E8C854;
     font-size: 35px;
-	font-weight: bold;
+    font-weight: bold;
     font-family: "League Spartan Bold";
 }
 
 section.weare-section-1 .container-section{
-	margin-top: 10px;
-	text-align: center;
+    margin-top: 10px;
+    text-align: center;
 }
 
 section.weare-section-1 .container-single{
-	float: left;
-	width: 33.333%;
-	padding: 10px;
+    float: left;
+    width: 33.333%;
+    padding: 10px;
 }
 
 section.weare-section-1 .container-single p{
-	display: inline-block;
-	text-align: justify;
+    display: inline-block;
+    text-align: justify;
     text-align-last: center;
     line-height: 1;
-	padding: 0px 20px;
+    padding: 0px 20px;
     font-size: 20px;
     font-family: "Open Sans";
     font-weight: bold;
