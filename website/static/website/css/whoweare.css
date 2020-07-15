@@ -75,3 +75,15 @@ section.weare-section-1 .container-single p{
     color: #868589;
 }
 /**************************************/
+
+/***********Call***********************/
+section.call{
+	width: 100%;
+	text-align: center;
+}
+
+section.call h2{
+    color: #E8C854;
+    font-family: "League Spartan Bold";
+}
+/************************************/
