@@ -87,3 +87,30 @@ section.call h2{
     font-family: "League Spartan Bold";
 }
 /************************************/
+
+/*********Mosaic********************/
+section.mosaic .container{
+	width: 100%;
+	margin: 50px auto;
+}
+
+.flex-mosaic{
+    display: flex;
+}
+
+.item-1-mosaic{
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+}
+
+.item-2-mosaic{
+    padding: 60px 40px;
+    width: 50%;
+}
+
+.item-2-mosaic{
+    color: #868589;
+}
+/**********************************/
