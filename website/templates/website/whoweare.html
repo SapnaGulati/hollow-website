@@ -3,13 +3,12 @@
 
 {% block title %}Hollow - Quem somos{% endblock title %}
 
-{% block mystylesheet %}
-    <link rel="stylesheet" type="text/css" href="{% static 'website/css/whoweare.css' %}">
-    {{ form.media }}
-{% endblock mystylesheet %}
+
 
 {% block content %}
-	<div class="image-header">
+	<link rel="stylesheet" type="text/css" href="{% static 'website/css/whoweare.css' %}">
 
+	<div class="image-header">
+		<img src="{% static 'website/img/weare_hand.png' %}">
 	</div><!--image-header-->
 {% endblock content %}
