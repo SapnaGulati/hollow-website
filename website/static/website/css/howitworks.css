@@ -95,12 +95,12 @@ div.page-content {
 }
 
 .right-img {
-  width: 50%;
+  width: 50vw;
   box-shadow: 5px 5px 7px grey;
 }
 
 .left-img {
   margin-left: 5vw;
-  width: 50%;
+  width: 50vw;
   box-shadow: 5px 5px 7px grey;
 }
