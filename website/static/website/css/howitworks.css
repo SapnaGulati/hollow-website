@@ -28,6 +28,11 @@ div.page-content {
   position: relative;
 }
 
+@font-face {
+  font-family: League Spartan Bold;
+  src: url('../fonts/LeagueSpartan-Bold.otf');
+}
+
 .text-1 {
   display: flex;
   flex-direction: column;
