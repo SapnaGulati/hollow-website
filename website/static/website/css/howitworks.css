@@ -8,4 +8,5 @@ div.image-header {
 
 div.image-header img.image-1{
     width: 100%;
+    object-fit: cover;
 }
