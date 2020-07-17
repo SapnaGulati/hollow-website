@@ -16,7 +16,7 @@ div.image-header {
 
 div.image-header img.image-1{
     width: 100%;
-    height: 550px;
+    height: 115vh;
     object-fit: cover;
 }
 

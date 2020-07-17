@@ -2,3 +2,12 @@
 {% load static %}
 
 {% block title %}Hollow - Como funciona{% endblock title %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/howitworks.css' %}">
+
+    <div class="image-header">
+        <img class="image-1" src="{% static 'website/img/whoitworks_top1.png' %}" style='position:relative; top:0px; left:0px;'>
+    </div><!--image-header-->
+
+{% endblock content %}
