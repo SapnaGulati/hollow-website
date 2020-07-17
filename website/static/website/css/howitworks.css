@@ -1,31 +1,35 @@
 div.image-header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  top: 0px;
   position: relative;
-  top: -150px;
-  left: 0;
-  width: 100%;
+  left: 0px;
 }
 
 div.image-header img.image-1 {
   width: 100%;
-  object-fit: cover;
   position: relative;
-  top: 0px;
-  left: 0px;
+  top: -150px;
+  margin-bottom: -150px;
+}
+
+div.image-header div.image-space {
+  position: relative;
 }
 
 div.image-header img.image-page-title {
-  margin-top: 24vh;
+  margin-top: 2vw;
   margin-left: 5%;
   position: absolute;
   width: 90%;
-  top: 0px;
-  left: 0px;
 }
 
 div.page-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 div.page-content div.text-1-title {}
