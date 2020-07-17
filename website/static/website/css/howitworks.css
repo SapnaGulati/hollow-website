@@ -66,17 +66,37 @@ div.page-content {
   margin-bottom: 10vw;
 }
 
+.text-on-right {
+  display: flex;
+  margin-bottom: 10vw;
+}
+
 .left-text-div {
   display: flex;
   width: 45%;
   flex-direction: column;
   text-align: end;
   justify-content: center;
-  padding-right: 15px;
+  padding-right: 2vw;
+  line-height: 2vw;
+}
+
+.right-text-div {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2vw;
   line-height: 2vw;
 }
 
 .right-img {
+  width: 50%;
+  box-shadow: 5px 5px 7px grey;
+}
+
+.left-img {
+  margin-left: 5vw;
   width: 50%;
   box-shadow: 5px 5px 7px grey;
 }
