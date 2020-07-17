@@ -70,6 +70,8 @@ TEMPLATES = [
     },
 ]
 
+
+AUTH_USER_MODEL = 'website.User'
 WSGI_APPLICATION = 'hollow.wsgi.application'
 
 
