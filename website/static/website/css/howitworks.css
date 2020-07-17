@@ -1,3 +1,4 @@
+/*Header section*/
 div.image-header {
   display: flex;
   align-items: flex-start;
@@ -21,6 +22,8 @@ div.image-header img.image-page-title {
   width: 90%;
 }
 
+/*End header section*/
+
 div.page-content {
   display: flex;
   flex-direction: column;
@@ -37,11 +40,12 @@ div.page-content {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 6vw;
+  margin-top: 8vw;
+  margin-bottom: 8vw;
   line-height: 1vw;
 }
 
-div.text-1 div.text-title {
+.text-title p {
   font-size: large;
   font-weight: 900;
   letter-spacing: 0vw;
@@ -49,10 +53,30 @@ div.text-1 div.text-title {
   color: #e8c854;
 }
 
-div.text-1 div.text-body p {
+.text-body p {
   color: #868589;
   font-size: large;
   font-weight: 700;
   letter-spacing: 0vw;
   font-size: 2.1vw;
+}
+
+.text-on-left {
+  display: flex;
+  margin-bottom: 10vw;
+}
+
+.left-text-div {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  text-align: end;
+  justify-content: center;
+  padding-right: 15px;
+  line-height: 2vw;
+}
+
+.right-img {
+  width: 50%;
+  box-shadow: 5px 5px 7px grey;
 }
