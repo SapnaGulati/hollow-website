@@ -36,6 +36,10 @@ div.page-content {
   src: url('../fonts/LeagueSpartan-Bold.otf');
 }
 
+.img-icon {
+  width: 8vw;
+}
+
 .text-1 {
   display: flex;
   flex-direction: column;
