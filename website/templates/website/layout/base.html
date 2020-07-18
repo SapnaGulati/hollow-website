@@ -47,7 +47,7 @@
 
 {% include "website/layout/navbar.html" %}
 
-<div class="hero {% if request.path != '/' %}py-6 mt-5 {% endif %}">
+<div class="hero">
     {% if messages %}
         {% for message in messages %}
             <div class="alert alert-dark alert-dismissible fade show container" role="alert">
