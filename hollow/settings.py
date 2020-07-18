@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'website.apps.WebsiteConfig',
     'phonenumber_field',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -70,6 +71,8 @@ TEMPLATES = [
     },
 ]
 
+
+AUTH_USER_MODEL = 'website.User'
 WSGI_APPLICATION = 'hollow.wsgi.application'
 
 

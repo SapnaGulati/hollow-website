@@ -4,10 +4,78 @@
 {% block title %}Hollow - Como funciona{% endblock title %}
 
 {% block content %}
-    <link rel="stylesheet" type="text/css" href="{% static 'website/css/howitworks.css' %}">
-
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/howitworks.css' %}">
+<div>
     <div class="image-header">
-        <img class="image-1" src="{% static 'website/img/whoitworks_top1.png' %}" style='position:relative; top:0px; left:0px;'>
-    </div><!--image-header-->
+        <img class="image-1" src="{% static 'website/img/big_image_01.png' %}">
+        <img class="image-page-title" src="{% static 'website/img/how_it_works_title.png' %}">
+    </div>
+    <!--image-header-->
+    <div class="page-content">
+        <div class="text-1">
+            <div class="text-title">
+                <p>POTENCIALIZE SEU DESEMPENHO</p>
+            </div>
+            <div class="text-body">
+                <p>Após assinar um dos nossos planos, terá acesso</p>
+                <p>completo e ilimitado a todos os seguintes recursos:</p>
+            </div>
+        </div>
+        <!--text-1-->
+        <div class="text-on-left">
+            <div class="left-text-div">
+                <div class="text-title">
+                    <p>VIDEO AULAS</p>
+                </div>
+                <div class="text-body">
+                    <p>Serão curtas, específicas e precisas.</p>
+                </div>
+                <div>
+                    <img class="img-icon" src="{% static 'website/img/pc_yellow.png' %}">
+                </div>
+            </div>
+            <img class="right-img" src="{% static 'website/img/girl_video_classes.png' %}">
+        </div>
+        <!--text-on-left-->
+        <div class="text-on-right">
+            <img class="left-img" src="{% static 'website/img/group_pre_test.png' %}">
+            <div class="right-text-div">
+                <div class="text-title">
+                    <p>FÓRUM EM DIRETO</p>
+                    <p>PRÉ PROVA</p>
+                </div>
+                <div class="text-body" style="line-height:0.8vw">
+                    <p>Com o apoio dos nossos instrutores,</p>
+                    <p>as suas dúvidas ficarão no passado.</p>
+                </div>
+                <div>
+                    <img class="img-icon" src="{% static 'website/img/doubt_yellow.png' %}">
+                </div>
+            </div>
+
+        </div>
+        <!--text-on-right-->
+        <div class="text-on-left">
+            <div class="left-text-div">
+                <div class="text-title">
+                    <p>PROVAS E EXERCÍCIOS</p>
+                    <p>RESOLVIDOS</p>
+                </div>
+                <div class="text-body" style="line-height:0.7vw">
+                    <p>Depois da teoria está na hora de</p>
+                    <p>colocar em prática. Para isso, temos</p>
+                    <p>diversos exercícios e provas</p>
+                    <p>resolvidas passo a passo.</p>
+                </div>
+                <div>
+                    <img class="img-icon" src="{% static 'website/img/test_yellow.png' %}">
+                </div>
+            </div>
+            <img class="right-img" src="{% static 'website/img/books_and_ipad.png' %}">
+        </div>
+        <!--text-on-left-->
+    </div>
+    <!--page-content-->
+</div>
 
 {% endblock content %}
