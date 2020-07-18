@@ -12,7 +12,7 @@ div.image-header img.image-1{
     transform: scaleX(-1);
 }
 
-/******mosaic-1*********/
+/******mosaic-1***********************/
 section.mosaic-1{
     position: relative;
     top: -100px;
@@ -41,7 +41,6 @@ section.mosaic-1 div.container{
     background-repeat: no-repeat;
     left: 100px;
     width:20%;
-    /*max-width: 100px;*/
     height: 100px;
 }
 
@@ -71,3 +70,4 @@ section.mosaic-1 div.container div.even h2{
  section.mosaic-1 div.container div.even p{
      text-align-last: right;
  }
+/*****************************************/
