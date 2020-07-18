@@ -1,3 +1,8 @@
+@font-face {
+  font-family: League Spartan Bold;
+  src: url('../fonts/LeagueSpartan-Bold.otf');
+}
+
 div.image-header {
     position: relative;
     top: -150px;
@@ -31,8 +36,8 @@ section.mosaic-1 div.container{
     margin-bottom: 0px;
 }
 
-.flex-mosaic-1-1:last-child{
-    margin-bottom: 0px;
+.flex-mosaic-1:last-child{
+    margin-bottom: 50px;
 }
 
 .item-1-mosaic-1{
@@ -50,19 +55,19 @@ section.mosaic-1 div.container{
 }
 
 .item-2-mosaic-1 h2{
-    font-size: 42px;
-    font-family: "LeagueSpartan-Bold";
+    font-size: 38px;
+    font-family: League Spartan Bold;
     color: #E8C854;
-    width: 95%;
+    width: 100%;
 }
 
 .item-2-mosaic-1 p{
     font-size: 24px;
-    font-family: "LeagueSpartan-Bold";
+    font-family: League Spartan Bold;
     font-weight: bold;
     text-align: justify;
     color: #868589;
-    width: 95%;
+    width: 100%;
 }
 section.mosaic-1 div.container div.even h2{
     text-align: right;
@@ -71,3 +76,29 @@ section.mosaic-1 div.container div.even h2{
      text-align-last: right;
  }
 /*****************************************/
+
+/****text-teach**************************/
+div.text-teach{
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+div.text-teach h2{
+    color: #E8C854;
+    font-family: League Spartan Bold;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+
+div.text-teach p{
+    background-color: #E8C854;
+    font-size: 30px;
+    color: white;
+    font-family: League Spartan Bold;
+    text-align: justify;
+    padding: 5%;
+    margin-bottom: 50px;
+}
+/****************************************/
