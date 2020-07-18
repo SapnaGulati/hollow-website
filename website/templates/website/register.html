@@ -2,3 +2,32 @@
 {% load static %}
 
 {% block title %}Hollow - entre para o time{% endblock title %}
+
+{% block content %}
+
+    <div class="container py-2">
+        <a href="{% url 'form_user' %}">
+            <button class="btn-warning-hollow" type="button">
+                Estudante
+            </button>
+        </a>
+
+        <a href="{% url 'form_user' %}">
+            <button class="btn-warning-hollow" type="button">
+                Professor
+            </button>
+        </a>
+    </div>
+
+
+{% endblock content %}
+
+{% block myjssheet %}
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#id_birthday").datepicker();
+        });
+    </script>
+{% endblock myjssheet %}
