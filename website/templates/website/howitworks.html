@@ -4,78 +4,63 @@
 {% block title %}Hollow - Como funciona{% endblock title %}
 
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{% static 'website/css/howitworks.css' %}">
-<div>
-    <div class="image-header">
-        <img class="image-1" src="{% static 'website/img/big_image_01.png' %}">
+    <div class="d-flex align-items-center image-header">
+        <img class="image-1 img-fluid" src="{% static 'website/img/big_image_01.png' %}">
         <img class="image-page-title" src="{% static 'website/img/how_it_works_title.png' %}">
     </div>
+
     <!--image-header-->
-    <div class="page-content">
-        <div class="text-1">
-            <div class="text-title">
-                <p>POTENCIALIZE SEU DESEMPENHO</p>
-            </div>
-            <div class="text-body">
-                <p>Após assinar um dos nossos planos, terá acesso</p>
-                <p>completo e ilimitado a todos os seguintes recursos:</p>
+    <div class="container-fluid py-3">
+        <div class="row py-4">
+            <div class="col-12 text-center">
+                <h2 class="yellow-hollow font-weight-bold text-capitalize">POTENCIALIZE SEU DESEMPENHO</h2>
+                <div class="container text-center col-8">
+                    <h3 class="text-muted text-center">Após assinar um dos nossos planos, terá acesso completo e ilimitado a todos os seguintes recursos:</h3>
+                </div>
             </div>
         </div>
         <!--text-1-->
-        <div class="text-on-left">
-            <div class="left-text-div">
-                <div class="text-title">
-                    <p>VIDEO AULAS</p>
-                </div>
-                <div class="text-body">
-                    <p>Serão curtas, específicas e precisas.</p>
-                </div>
-                <div>
-                    <img class="img-icon" src="{% static 'website/img/pc_yellow.png' %}">
+        <div class="row py-4 px-5">
+            <div class="col-md-6 col-sm-12 py-2 text-right align-self-center">
+                <h2 class="yellow-hollow font-weight-bold text-capitalize">VIDEO AULAS</h2>
+                <h3 class="text-muted text-right">Serão curtas, específicas e precisas.</h3>
+                <div class="py-2">
+                    <img class="img-icon img-fluid" src="{% static 'website/img/pc_yellow.png' %}">
                 </div>
             </div>
-            <img class="right-img" src="{% static 'website/img/girl_video_classes.png' %}">
+            <div class="col-md-6 col-sm-12 py-2 ">
+                <img class="img-fluid shadow-lg align-self-center" src="{% static 'website/img/girl_video_classes.png' %}">
+            </div>
         </div>
         <!--text-on-left-->
-        <div class="text-on-right">
-            <img class="left-img" src="{% static 'website/img/group_pre_test.png' %}">
-            <div class="right-text-div">
-                <div class="text-title">
-                    <p>FÓRUM EM DIRETO</p>
-                    <p>PRÉ PROVA</p>
-                </div>
-                <div class="text-body" style="line-height:0.8vw">
-                    <p>Com o apoio dos nossos instrutores,</p>
-                    <p>as suas dúvidas ficarão no passado.</p>
-                </div>
-                <div>
+        <div class="row py-4 px-5">
+            <div class="col-md-6 col-sm-12 py-2 align-self-center">
+                <img class="img-fluid shadow-lg align-self-center" src="{% static 'website/img/group_pre_test.png' %}">
+            </div>
+            <div class="col-md-6 col-sm-12 py-2 text-right align-self-center">
+                <h2 class="yellow-hollow font-weight-bold text-capitalize">FÓRUM EM DIRETO PRÉ PROVA</h2>
+                <h3 class="text-muted text-left">Com o apoio dos nossos instrutores, as suas dúvidas ficarão no passado.</h3>
+                <div class="py-2">
                     <img class="img-icon" src="{% static 'website/img/doubt_yellow.png' %}">
                 </div>
             </div>
-
         </div>
+
         <!--text-on-right-->
-        <div class="text-on-left">
-            <div class="left-text-div">
-                <div class="text-title">
-                    <p>PROVAS E EXERCÍCIOS</p>
-                    <p>RESOLVIDOS</p>
-                </div>
-                <div class="text-body" style="line-height:0.7vw">
-                    <p>Depois da teoria está na hora de</p>
-                    <p>colocar em prática. Para isso, temos</p>
-                    <p>diversos exercícios e provas</p>
-                    <p>resolvidas passo a passo.</p>
-                </div>
-                <div>
+        <div class="row py-4 px-5">
+            <div class="col-md-6 col-sm-12 py-2 text-right align-self-center">
+                <h2 class="yellow-hollow font-weight-bold text-capitalize">PROVAS E EXERCÍCIOS RESOLVIDOS</h2>
+                <h3 class="text-muted text-right">Depois da teoria está na hora de colocar em prática. Para isso, temos diversos exercícios e provas resolvidas passo a passo.</h3>
+                <div class="py-2">
                     <img class="img-icon" src="{% static 'website/img/test_yellow.png' %}">
                 </div>
             </div>
-            <img class="right-img" src="{% static 'website/img/books_and_ipad.png' %}">
+            <div class="col-md-6 col-sm-12 py-2 align-self-center ">
+                <img class="img-fluid shadow-lg" src="{% static 'website/img/books_and_ipad.png' %}">
+            </div>
         </div>
         <!--text-on-left-->
     </div>
     <!--page-content-->
-</div>
 
 {% endblock content %}
