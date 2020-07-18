@@ -8,6 +8,45 @@
 
     <div class="image-header">
         <img class="image-1" src="{% static 'website/img/workwithus_header.png' %}" style='position:relative; top:0px; left: 0px;'>
+        <img src="{% static 'website/img/favicon-hollow.png' %}" style='position:absolute; bottom:30px; left:70px; width: 38px;'>
     </div><!--image-header-->
+
+    <section class="mosaic-1">
+        <div class="container">
+            <div class="flex-mosaic-1 odd">
+                <div class="item-1-mosaic-1", style='background-image: url("{% static 'website/img/workwithus_mosaic_1.png' %}"); order: 2;'></div><!--item-1-mosaic-->
+                <div class="item-2-mosaic-1", style="order: 1;">
+                    <div class="text">
+                        <h2>SEJA BEM VINDO, PROFESSOR!</h2>
+                        <p>
+                            Se está aqui, muito provavelmente tem interesse em dar aulas e tem
+                            uma visão alinhada com a nossa de querer melhorar a educação em
+                            Portugal. Vocês são o coração do nosso negócio e é com o maior
+                            prazer que estamos abertos a conversar e conhecê-lo melhor.
+                        </p>
+                    </div>
+                </div><!--item-2-mosaic-->
+            </div><!--flex-mosaic-1-->
+
+            <div class="flex-mosaic-1 even">
+                <div class="item-1-mosaic-1", style='background-image: url("{% static 'website/img/workwithus_mosaic_2.png' %}"); order: 1;'></div><!--item-1-mosaic-->
+                <div class="item-2-mosaic-1", style="order: 2;">
+                    <div class="text">
+                        <h2>O NOSSO AMBIENTE</h2>
+                        <p>
+                            Somos jovens e assim como nossos alunos queremos aprender. Estamos
+                            sempre animados para conhecer novas pessoas, com novos olhares e
+                            perspectivas, sonhadores. Embora não tenhamos um escritório ou
+                            ambiente físico, trabalhamos sempre em conjunto e unidos com uma
+                            energia muito positiva e descontraída, sem perder o foco e objetivo no
+                            propósito da startup. Não há um chefe, não há ninguém melhor que
+                            ninguém na equipa, todos se completam e contribuem à sua maneira e
+                            ideal de pensar.
+                        </p>
+                    </div>
+                </div><!--item-2-mosaic-->
+            </div><!--flex-mosaic-1-->
+        </div><!--container-->
+    </section><!--mosaic-1-->
 
 {% endblock content %}
