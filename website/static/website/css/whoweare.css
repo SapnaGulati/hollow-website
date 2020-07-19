@@ -130,10 +130,11 @@ section.mosaic .container{
 }
 section.mosaic div.container div.odd h2, section.mosaic div.container div.odd p{
     text-align: right;
+
 }
 section.mosaic div.container div.text{
     position: relative;
-    bottom: -170px;
+    top: 100px;
 }
 
 /**********************************/
