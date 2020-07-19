@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'website/css/workwithus.css' %}">
 
     <div class="image-header">
-        <img class="image-1" src="{% static 'website/img/workwithus_header.png' %}" style='position:relative; top:0px; left: 0px;'>
+        <img class="image-1" src="{% static 'website/img/workwithus_header.png' %}" style='z-index: -1;position:relative; top:0px; left: 0px;'>
         <img src="{% static 'website/img/favicon-hollow.png' %}" style='position:absolute; bottom:30px; left:70px; width: 38px;'>
     </div><!--image-header-->
 
@@ -47,6 +47,52 @@
                 </div><!--item-2-mosaic-->
             </div><!--flex-mosaic-1-->
         </div><!--container-->
+        <div class="text-teach">
+            <h2>A FORMA <span class="logo"><img src="{% static 'website/img/logo_hollow.png' %}"> </span> DE ENSINAR</h2>
+            <p>
+                Temos uma forma inovadora de ensinar, que foge do habitual e
+                cria um ambiente totalmente favorecedor ao aluno. Para isso,
+                todos professores que forem dar aulas connosco irão ser
+                apresentados à nossa metodologia de ensinar. Será,
+                basicamente, uma indução para que vocês se adequem ao
+                nosso formato de aulas.
+            </p>
+        </div><!--text-teach-->
+        <div class="container">
+            <div class="flex-mosaic-1 odd">
+                <div class="item-1-mosaic-1", style='background-image: url("{% static 'website/img/workwithus_mosaic_3.png' %}"); order: 2;'></div><!--item-1-mosaic-->
+                <div class="item-2-mosaic-1", style="order: 1;">
+                    <div class="text">
+                        <h2>OPORTUNIDADES AO ENSINAR CONNOSCO</h2>
+                        <p>
+                            Em primeiro lugar, ao juntar-se a nós, estará ainda mais alinhado com o nosso
+                            sonho de melhorar o desempenho e diminuir a evasão de alunos do ensino
+                            superior. Ao mesmo tempo, trabalhará numa startup, onde poderá aprender
+                            e desenvolver várias habilidades. Dentre elas, podemos referir algumas que
+                            nós, já pertencentes à equipa, estamos a desenvolver muito: organização,
+                            comunicação, autonomia e multi-tasking. Além de tudo isto, também
+                            gostaríamos de citar vantagens como: a forma de remuneração que será bem
+                            atraente e diferenciada do mercado e, claro, uma nova experiência para pôr
+                            no seu currículo.
+                        </p>
+                    </div>
+                </div><!--item-2-mosaic-->
+            </div><!--flex-mosaic-1-->
+        </div><!--container-->
     </section><!--mosaic-1-->
+    <section class="mosaic-2">
+        <img src="{% static 'website/img/workwithus_teacher_small.png' %}">
+        <h2>INTERESSADO?</h2>
+        <p>
+            Envie o seu currículo e selecione a cadeira que deseja lecionar,
+            assim como as suas notas na faculdade dessa cadeira (histórico
+            académico), para ensineconosco@hollow.pt. Também pedimos
+            para que preencha o formulário no link abaixo, para que
+            consigamos mapear os seus interesses e skills.
+        </p>
+        <div class="button">
+            <button>Preencher formulário</button>
+        </div>
+    </section><!--mosaic-2-->
 
 {% endblock content %}
