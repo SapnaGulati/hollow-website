@@ -102,3 +102,66 @@ div.text-teach p{
     margin-bottom: 50px;
 }
 /****************************************/
+
+/******mosaic-2*************************/
+section.mosaic-2{
+    position: relative;
+    top: -150px;
+    width: 100%;
+    padding: 5%;
+}
+
+section.mosaic-2 img{
+    width: 100%;
+}
+
+section.mosaic-2 h2{
+    position: relative;
+    bottom: 50px;
+    left: 1%;
+    color: white;
+    text-shadow: 0.05em -0.05em #333;
+}
+
+section.mosaic-2 p{
+    align-items: center;
+    text-align: justify;
+    text-align-last: center;
+    padding: 0 25%;
+    font-family: League Spartan Bold;
+    font-size: 18px;
+    color: #868589;
+    line-height: 2;
+}
+
+section.mosaic-2 .button{
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+section.mosaic-2 button{
+    border: 0;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    background-color: #E8C854;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px #4D4C4D;
+    font-family: League Spartan Bold;
+    color: #4D4C4D;
+    outline: none;
+}
+
+section.mosaic-2 button:hover{
+    background-color: rgb(212, 180,64);
+}
+
+section.mosaic-2 button:active{
+  background-color: rgb(212, 180,64);
+  box-shadow: 1px 1px 1px #4D4C4D;
+  transform: translateY(4px);
+}
