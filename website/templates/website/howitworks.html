@@ -4,13 +4,17 @@
 {% block title %}Hollow - Como funciona{% endblock title %}
 
 {% block content %}
+
     <div class="d-flex align-items-center image-header">
         <img class="image-1 img-fluid" src="{% static 'website/img/big_image_01.png' %}">
         <img class="image-page-title" src="{% static 'website/img/how_it_works_title.png' %}">
     </div>
-
     <!--image-header-->
-    <div class="container-fluid py-3">
+    
+    <div class="container-fluid py-3" style=
+                'background: url("{% static 'website/img/how_it_works_bg.png' %}") scroll;
+                 background-size:50%;'
+    >
         <div class="row py-4">
             <div class="col-12 text-center">
                 <h2 class="yellow-hollow font-weight-bold text-capitalize">POTENCIALIZE SEU DESEMPENHO</h2>
