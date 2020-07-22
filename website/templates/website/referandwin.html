@@ -13,55 +13,58 @@
             'background: url("{% static 'website/img/how_it_works_bg.png' %}") scroll;
                     background-size:50%;'
     >
-    <div class="row py-4">
-        <div class="col-12 text-center">
-            <h2 class="yellow-hollow font-weight-bold text-capitalize">COMO FUNCIONA?</h2>
-            <div class="container text-center col-8">
-                <h3 class="text-muted text-center">Inscreva-se e comece a estudar agora mesmo
-                    Compartilhe o link gerado com os seus amigos
-                    O seu amigo aplica o link no nosso site
-                    Pronto! Agora os dois têm acesso gratuito!</h3>
-                <button type="button">Gerar link agora mesmo!</button>
+        <div class="row py-4">
+            <div class="col-12 text-center">
+                <h2 class="yellow-hollow font-weight-bold text-capitalize">COMO FUNCIONA?</h2>
+                <div class="container text-center col-8">
+                    <h3 class="text-muted text-center">Inscreva-se e comece a estudar agora mesmo
+                        Compartilhe o link gerado com os seus amigos
+                        O seu amigo aplica o link no nosso site
+                        Pronto! Agora os dois têm acesso gratuito!</h3>
+                    <button type="button">Gerar link agora mesmo!</button>
+                </div>
             </div>
         </div>
-    </div>
-{#    TODO: change left image #}
-    <!--text-1-->
-    <!--text-on-right-->
-    <div class="row py-4 px-5">
-        <div class="col-md-6 col-sm-12 py-2 align-self-center">
-            <img class="img-fluid shadow-lg align-self-center" src="{% static 'website/img/group_pre_test.png' %}">
-        </div>
-        <div class="col-md-6 col-sm-12 py-2 text-right align-self-center">
-            <h2 class="yellow-hollow font-weight-bold text-capitalize">REGRAS</h2>
-            <ul class="text-muted text-left">
-                <li>Não poderão utilizar o cupão de um amigo, os
-                indivíduos nas seguintes situações</li>
-                <li>Aqueles que são ou já foram assinantes da
-                    Hollow;
-                </li>
-                <li>Aqueles que já utilizaram o cupão uma vez.
-                </li>
-                <li>Os usuários terão de ser pessoas reais, com
-                    NIF e conta própria no Facebook; caso
-                    contrário, serão entendidos como robôs
-                </li>
-                <li>O indivíduo com o link poderá ter o seu
-                    cupão utilizado no máximo 5 vezes. Ou seja,
-                    tem um máximo de 25 dias de acesso gratuito.
-                </li>
-                <li>A Hollow tem o direito de cancelar o cupão
-                    de qualquer usuário que desrespeitar as
-                    regras
-                </li>
-            </ul>
-            <div class="py-2">
-                <img class="img-icon" src="{% static 'website/img/doubt_yellow.png' %}">
+        {#    TODO: change left image #}
+        <!--text-1-->
+        <!--text-on-right-->
+        <div class="row py-4 px-5">
+            <div class="col-md-6 col-sm-12 py-2 align-self-center">
+                <img class="img-fluid shadow-lg align-self-center" src="{% static 'website/img/group_pre_test.png' %}">
+            </div>
+            <div class="col-md-6 col-sm-12 py-2 text-right align-self-center">
+                <h2 class="yellow-hollow font-weight-bold text-capitalize">REGRAS</h2>
+                <ul class="text-muted text-left">
+                    <li>Não poderão utilizar o cupão de um amigo, os
+                        indivíduos nas seguintes situações
+                    </li>
+                    <li>Aqueles que são ou já foram assinantes da
+                        Hollow;
+                    </li>
+                    <li>Aqueles que já utilizaram o cupão uma vez.
+                    </li>
+                    <li>Os usuários terão de ser pessoas reais, com
+                        NIF e conta própria no Facebook; caso
+                        contrário, serão entendidos como robôs
+                    </li>
+                    <li>O indivíduo com o link poderá ter o seu
+                        cupão utilizado no máximo 5 vezes. Ou seja,
+                        tem um máximo de 25 dias de acesso gratuito.
+                    </li>
+                    <li>A Hollow tem o direito de cancelar o cupão
+                        de qualquer usuário que desrespeitar as
+                        regras
+                    </li>
+                </ul>
+                <div class="py-2">
+                    <img class="img-icon" src="{% static 'website/img/doubt_yellow.png' %}">
+                </div>
             </div>
         </div>
     </div>
     <section id="ribbon-hollow">
-        <div class="container py-3 ribbon-hollow" style="background-image: url('{% static 'website/img/bg_word.png' %}');">
+        <div class="container py-3 ribbon-hollow"
+             style="background-image: url('{% static 'website/img/bg_word.png' %}');">
             <div class="row">
                 <div class="col-md-2 py-3 px-5 align-self-center text-center">
                     <img class="icone-hollow" src="{% static 'website/img/pc_people.svg' %}" alt="Card image cap">
@@ -73,7 +76,8 @@
                     <h5> Potencialize seu desempenho. </h5>
                 </div>
                 <div class="col-md-2 col-sm-12 py-sm-2 mx-sm-3 align-self-center text-center">
-                    <a class="btn btn-light btn-light-hollow rounded" href="{% url 'login' %}" role="button">Comece já!</a>
+                    <a class="btn btn-light btn-light-hollow rounded" href="{% url 'login' %}" role="button">Comece
+                        já!</a>
                 </div>
             </div>
         </div>

@@ -2,179 +2,179 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="709.53223"
-   height="91.934456"
-   viewBox="0 0 187.73039 24.324325"
-   version="1.1"
-   id="svg16493"
-   sodipodi:docname="bg_word.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
-  <defs
-     id="defs16487">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient17145">
-      <stop
-         style="stop-color:#ff0000;stop-opacity:1;"
-         offset="0"
-         id="stop17141" />
-      <stop
-         style="stop-color:#ff0000;stop-opacity:0;"
-         offset="1"
-         id="stop17143" />
-    </linearGradient>
-    <clipPath
-       id="clip18">
-      <rect
-         id="rect1795"
-         height="174"
-         width="1698"
-         y="0"
-         x="0" />
-    </clipPath>
-    <clipPath
-       id="clip19">
-      <path
-         id="path1789"
-         d="M 0.371094,2 H 49 V 163 H 0.371094 Z m 0,0"
-         inkscape:connector-curvature="0" />
-    </clipPath>
-    <clipPath
-       id="clip20">
-      <path
-         id="path1792"
-         d="M 326,7 H 470 V 173.78125 H 326 Z m 0,0"
-         inkscape:connector-curvature="0" />
-    </clipPath>
-    <mask
-       id="mask14">
-      <g
-         id="g1786"
-         transform="scale(0.26458333)"
-         style="filter:url(#alpha)">
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+        width="709.53223"
+        height="91.934456"
+        viewBox="0 0 187.73039 24.324325"
+        version="1.1"
+        id="svg16493"
+        sodipodi:docname="bg_word.svg"
+        inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+    <defs
+            id="defs16487">
+        <linearGradient
+                inkscape:collect="always"
+                id="linearGradient17145">
+            <stop
+                    style="stop-color:#ff0000;stop-opacity:1;"
+                    offset="0"
+                    id="stop17141"/>
+            <stop
+                    style="stop-color:#ff0000;stop-opacity:0;"
+                    offset="1"
+                    id="stop17143"/>
+        </linearGradient>
+        <clipPath
+                id="clip18">
+            <rect
+                    id="rect1795"
+                    height="174"
+                    width="1698"
+                    y="0"
+                    x="0"/>
+        </clipPath>
+        <clipPath
+                id="clip19">
+            <path
+                    id="path1789"
+                    d="M 0.371094,2 H 49 V 163 H 0.371094 Z m 0,0"
+                    inkscape:connector-curvature="0"/>
+        </clipPath>
+        <clipPath
+                id="clip20">
+            <path
+                    id="path1792"
+                    d="M 326,7 H 470 V 173.78125 H 326 Z m 0,0"
+                    inkscape:connector-curvature="0"/>
+        </clipPath>
+        <mask
+                id="mask14">
+            <g
+                    id="g1786"
+                    transform="scale(0.26458333)"
+                    style="filter:url(#alpha)">
+                <rect
+                        id="rect1784"
+                        style="fill:#000000;fill-opacity:0.11000103;stroke:none"
+                        height="3866"
+                        width="1920"
+                        y="0"
+                        x="0"/>
+            </g>
+        </mask>
+        <filter
+                height="1"
+                width="1"
+                y="0"
+                x="0"
+                filterUnits="objectBoundingBox"
+                id="alpha">
+            <feColorMatrix
+                    id="feColorMatrix1546"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+                    in="SourceGraphic"
+                    type="matrix"/>
+        </filter>
+        <clipPath
+                id="clipPath16476">
+            <rect
+                    id="rect16474"
+                    height="174"
+                    width="1698"
+                    y="0"
+                    x="0"/>
+        </clipPath>
+        <clipPath
+                id="clipPath16480">
+            <path
+                    id="path16478"
+                    d="M 0.371094,2 H 49 V 163 H 0.371094 Z m 0,0"
+                    inkscape:connector-curvature="0"/>
+        </clipPath>
+        <clipPath
+                id="clipPath16484">
+            <path
+                    id="path16482"
+                    d="M 326,7 H 470 V 173.78125 H 326 Z m 0,0"
+                    inkscape:connector-curvature="0"/>
+        </clipPath>
+        <linearGradient
+                inkscape:collect="always"
+                xlink:href="#linearGradient17145"
+                id="linearGradient17147"
+                x1="6.7968135"
+                y1="150.40323"
+                x2="169.741"
+                y2="150.40323"
+                gradientUnits="userSpaceOnUse"/>
+    </defs>
+    <sodipodi:namedview
+            id="base"
+            pagecolor="#ffffff"
+            bordercolor="#666666"
+            borderopacity="1.0"
+            inkscape:pageopacity="0.0"
+            inkscape:pageshadow="2"
+            inkscape:zoom="0.98994949"
+            inkscape:cx="373.74318"
+            inkscape:cy="118.09444"
+            inkscape:document-units="mm"
+            inkscape:current-layer="layer1"
+            showgrid="false"
+            fit-margin-top="0"
+            fit-margin-left="0"
+            fit-margin-right="0"
+            fit-margin-bottom="0"
+            units="px"
+            inkscape:window-width="1366"
+            inkscape:window-height="705"
+            inkscape:window-x="-8"
+            inkscape:window-y="-8"
+            inkscape:window-maximized="1"/>
+    <metadata
+            id="metadata16490">
+        <rdf:RDF>
+            <cc:Work
+                    rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                        rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title></dc:title>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g
+            inkscape:label="Camada 1"
+            inkscape:groupmode="layer"
+            id="layer1"
+            transform="translate(-7.2357635,-140.14335)">
         <rect
-           id="rect1784"
-           style="fill:#000000;fill-opacity:0.11000103;stroke:none"
-           height="3866"
-           width="1920"
-           y="0"
-           x="0" />
-      </g>
-    </mask>
-    <filter
-       height="1"
-       width="1"
-       y="0"
-       x="0"
-       filterUnits="objectBoundingBox"
-       id="alpha">
-      <feColorMatrix
-         id="feColorMatrix1546"
-         values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
-         in="SourceGraphic"
-         type="matrix" />
-    </filter>
-    <clipPath
-       id="clipPath16476">
-      <rect
-         id="rect16474"
-         height="174"
-         width="1698"
-         y="0"
-         x="0" />
-    </clipPath>
-    <clipPath
-       id="clipPath16480">
-      <path
-         id="path16478"
-         d="M 0.371094,2 H 49 V 163 H 0.371094 Z m 0,0"
-         inkscape:connector-curvature="0" />
-    </clipPath>
-    <clipPath
-       id="clipPath16484">
-      <path
-         id="path16482"
-         d="M 326,7 H 470 V 173.78125 H 326 Z m 0,0"
-         inkscape:connector-curvature="0" />
-    </clipPath>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient17145"
-       id="linearGradient17147"
-       x1="6.7968135"
-       y1="150.40323"
-       x2="169.741"
-       y2="150.40323"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="373.74318"
-     inkscape:cy="118.09444"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     units="px"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata16490">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Camada 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-7.2357635,-140.14335)">
-    <rect
-       style="opacity:0.053;fill:none;fill-opacity:1;stroke:#fffff0;stroke-width:0.92399997;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
-       id="rect17133"
-       width="197.77945"
-       height="43.297665"
-       x="-7.2601638"
-       y="128.78996" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25.39538956px;line-height:1.25;font-family:'Leelawadee UI';-inkscape-font-specification:'Leelawadee UI Bold';letter-spacing:0px;word-spacing:0px;opacity:0.2;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffed;stroke-width:0.54299998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="99.217056"
-       y="163.6434"
-       id="text17139"
-       transform="scale(0.99852141,1.0014808)"
-       inkscape:export-xdpi="80"
-       inkscape:export-ydpi="80"><tspan
+                style="opacity:0.053;fill:none;fill-opacity:1;stroke:#fffff0;stroke-width:0.92399997;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+                id="rect17133"
+                width="197.77945"
+                height="43.297665"
+                x="-7.2601638"
+                y="128.78996"/>
+        <text
+                xml:space="preserve"
+                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25.39538956px;line-height:1.25;font-family:'Leelawadee UI';-inkscape-font-specification:'Leelawadee UI Bold';letter-spacing:0px;word-spacing:0px;opacity:0.2;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffed;stroke-width:0.54299998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                x="99.217056"
+                y="163.6434"
+                id="text17139"
+                transform="scale(0.99852141,1.0014808)"
+                inkscape:export-xdpi="80"
+                inkscape:export-ydpi="80"><tspan
          sodipodi:role="line"
          id="tspan17137"
          x="99.217056"
          y="163.6434"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Leelawadee UI';-inkscape-font-specification:'Leelawadee UI Bold';text-align:center;text-anchor:middle;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffed;stroke-width:0.54299998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">INCREVA-SE J!</tspan></text>
-  </g>
+    </g>
 </svg>
