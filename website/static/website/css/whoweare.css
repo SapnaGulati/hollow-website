@@ -1,9 +1,9 @@
-.center{
+.center {
     width: 100%;
     margin: 0 auto;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
@@ -14,14 +14,14 @@ div.image-header {
     width: 100%;
 }
 
-div.image-header img.image-1{
+div.image-header img.image-1 {
     z-index: -1;
     width: 100%;
     height: 115vh;
     object-fit: cover;
 }
 
-div.weare-text-1{
+div.weare-text-1 {
     position: relative;
     top: 50px;
     width: 81%;
@@ -29,7 +29,7 @@ div.weare-text-1{
     margin-left: 10%;
 }
 
-div.weare-text-1 p{
+div.weare-text-1 p {
     font-family: "League Spartan Bold";
     font-size: 30px;
     font-weight: bold;
@@ -41,13 +41,13 @@ div.weare-text-1 p{
 }
 
 /*****************weare-section-1*********************/
-section.weare-section-1{
+section.weare-section-1 {
     position: relative;
     top: 50px;
     padding: 0px 1%;
 }
 
-section.weare-section-1 div.center h2{
+section.weare-section-1 div.center h2 {
     text-align: center;
     color: #E8C854;
     font-size: 35px;
@@ -55,18 +55,18 @@ section.weare-section-1 div.center h2{
     font-family: "League Spartan Bold";
 }
 
-section.weare-section-1 .container-section{
+section.weare-section-1 .container-section {
     margin-top: 50px;
     text-align: center;
 }
 
-section.weare-section-1 .container-single{
+section.weare-section-1 .container-single {
     float: left;
     width: 33.333%;
     padding: 10px;
 }
 
-section.weare-section-1 .container-single p{
+section.weare-section-1 .container-single p {
     display: inline-block;
     text-align: justify;
     text-align-last: center;
@@ -78,64 +78,70 @@ section.weare-section-1 .container-single p{
     color: #868589;
     margin-bottom: 100px;
 }
+
 /**************************************/
 
 /***********Call***********************/
-section.call{
-	width: 100%;
-	text-align: center;
+section.call {
+    width: 100%;
+    text-align: center;
 }
 
-section.call h2{
+section.call h2 {
     color: #E8C854;
     font-family: "League Spartan Bold";
 }
+
 /************************************/
 
 /*********Mosaic********************/
-section.mosaic .container{
-	width: 100%;
-	margin: 50px auto;
+section.mosaic .container {
+    width: 100%;
+    margin: 50px auto;
 }
 
-.flex-mosaic{
+.flex-mosaic {
     position: relative;
     display: flex;
     margin-bottom: 60px;
 }
 
-.flex-mosaic:last-child{
+.flex-mosaic:last-child {
     margin-bottom: 0px;
 }
 
-.item-1-mosaic{
+.item-1-mosaic {
     background-position: center;
     background-size: cover;
     width: 53%;
     height: 530px;
 }
 
-.item-2-mosaic{
+.item-2-mosaic {
     padding: 60px 40px;
     width: 47%;
 }
-.item-2-mosaic h2{
+
+.item-2-mosaic h2 {
     font-size: 40px;
     font-family: "League Spartan Bold";
     color: #868589;
 }
-.item-2-mosaic p{
+
+.item-2-mosaic p {
     font-size: 18px;
     font-family: "League Spartan Bold";
     font-weight: bold;
     color: #868589;
 
 }
-section.mosaic div.container div.odd h2, section.mosaic div.container div.odd p{
+
+section.mosaic div.container div.odd h2, section.mosaic div.container div.odd p {
     text-align: right;
 
 }
-section.mosaic div.container div.text{
+
+section.mosaic div.container div.text {
     position: relative;
     top: 100px;
 }
@@ -143,28 +149,29 @@ section.mosaic div.container div.text{
 /**********************************/
 
 /*****icons-social*****************/
-section.mosaic div.container div.flex-mosaic div.item-2-mosaic div.icons-social{
+section.mosaic div.container div.flex-mosaic div.item-2-mosaic div.icons-social {
     margin-top: 20px;
     position: absolute;
     top: 460px;
 }
 
-section.mosaic div.container div.odd div.item-2-mosaic div.icons-social{
+section.mosaic div.container div.odd div.item-2-mosaic div.icons-social {
     right: 55%;
 }
 
-section.mosaic div.container div.flex-mosaic div.item-2-mosaic div.icons-social a{
-    text-decoration:none;
+section.mosaic div.container div.flex-mosaic div.item-2-mosaic div.icons-social a {
+    text-decoration: none;
     color: white;
-    width:40px;
-    height:40px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
-    margin:0 0px;
+    margin: 0 0px;
     text-align: center;
 }
 
-section.mosaic div.container div.flex-mosaic div.item-2-mosaic div.icons-social i{
+section.mosaic div.container div.flex-mosaic div.item-2-mosaic div.icons-social i {
     line-height: 50px;
-    font-size:36px;
+    font-size: 36px;
 }
+
 /**********************************/

@@ -1,14 +1,15 @@
 /* your styles go here */
 
-body{
+body {
     background-color: #fff !important;
     color: #858287;
 }
+
 .w-4rem {
-  width: 4rem !important;
+    width: 4rem !important;
 }
 
-.form-text{
+.form-text {
     text-transform: uppercase !important;
 }
 
@@ -70,27 +71,27 @@ a.text-primary:hover, a.text-primary:focus {
     font-size: 0.95rem !important;
 }
 
-.pt-sm-1{
+.pt-sm-1 {
     padding-top: 15px !important;
 }
 
-.mt-sm-1{
+.mt-sm-1 {
     margin-top: 15px;
 }
 
 .my-float {
-    background-color:  #63656a !important;
+    background-color: #63656a !important;
     width: 75%;
     position: center;
 }
 
 /*Carousel text color*/
-.text-hover-success:hover{
+.text-hover-success:hover {
     color: #63656a !important;
     background: white !important;
 }
 
-.itaim-color{
+.itaim-color {
     background: #63656a !important;
 }
 
@@ -98,11 +99,11 @@ a.text-primary:hover, a.text-primary:focus {
     background-color: #495057 !important;
 }
 
-.footer_contact{
+.footer_contact {
     background-color: #495057 !important;
 }
 
-.carousel_header{
+.carousel_header {
     width: 100%;
     display: block;
     margin-left: auto;
@@ -111,31 +112,31 @@ a.text-primary:hover, a.text-primary:focus {
 
 /*Floating button*/
 
-.fixed-action-btn{
-    position:fixed;
-    right:23px;
-    bottom:23px;
-    padding-top:15px;
-    margin-bottom:0;
-    z-index:997;
-    bottom:45px;
-    right:24px;
+.fixed-action-btn {
+    position: fixed;
+    right: 23px;
+    bottom: 23px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+    bottom: 45px;
+    right: 24px;
 }
 
-.btn-floating.btn-large{
-    width:56px;
-    height:56px;
-    padding:0;
+.btn-floating.btn-large {
+    width: 56px;
+    height: 56px;
+    padding: 0;
 }
 
-.btn-large{
-    height:54px;
-    line-height:54px;
-    font-size:15px;
+.btn-large {
+    height: 54px;
+    line-height: 54px;
+    font-size: 15px;
     padding: 0 28px;
 }
 
-.btn-floating{
+.btn-floating {
     display: inline-block;
     color: #FFF;
     position: relative;
@@ -152,19 +153,20 @@ a.text-primary:hover, a.text-primary:focus {
     vertical-align: middle;
 }
 
-.btn-floating.btn-large i{
-    line-height:56px;
+.btn-floating.btn-large i {
+    line-height: 56px;
 }
 
-.btn-floating i{
+.btn-floating i {
     width: inherit;
-    display:inline-block;
-    text-align:center;
+    display: inline-block;
+    text-align: center;
     color: #FFF;
     font-size: 1.6rem;
     line-height: 40px;
 }
-.fixed-action-btn ul{
+
+.fixed-action-btn ul {
     left: 0;
     right: 0;
     text-align: center;
@@ -173,44 +175,50 @@ a.text-primary:hover, a.text-primary:focus {
     margin: 0;
     visibility: hidden;
 }
-.fixed-action-btn.active ul{
+
+.fixed-action-btn.active ul {
     visibility: visible;
 }
-ul:not(.browser-default){
-    padding-left:0;
-    list-style-type:none;
+
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
 }
-.fixed-action-btn  ul li{
-    margin-bottom:15px;
+
+.fixed-action-btn ul li {
+    margin-bottom: 15px;
 }
-.fixed-action-btn.direction-left, .fixed-action-btn.direction-right{
+
+.fixed-action-btn.direction-left, .fixed-action-btn.direction-right {
     padding: 0 0 0 15px;
 }
-.fixed-action-btn.direction-left ul, .fixed-action-btn.direction-right ul{
-    text-align:right;
+
+.fixed-action-btn.direction-left ul, .fixed-action-btn.direction-right ul {
+    text-align: right;
     right: 64px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     height: 100%;
-    left:auto;
+    left: auto;
     width: 500px;
 }
-.fixed-action-btn.direction-left ul li, .fixed-action-btn.direction-right ul li{
+
+.fixed-action-btn.direction-left ul li, .fixed-action-btn.direction-right ul li {
     display: inline-block;
     margin: 7.5px 15px 0 0;
 }
 
 /* Footer background image */
-.footer-watermark{
-  background-color: #000000; /* Used if the image is unavailable */
-  height: 200px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+.footer-watermark {
+    background-color: #000000; /* Used if the image is unavailable */
+    height: 200px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
 }
 
 /* Hollow color for details*/
 
-.btn-hollow{
+.btn-hollow {
     color: #f3c745;
 }

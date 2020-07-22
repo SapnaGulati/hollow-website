@@ -1,6 +1,6 @@
 /* your styles go here */
 
-body{
+body {
     background-color: #fff !important;
     color: #000000;
     font-size: 0.6rem !important;
@@ -15,51 +15,51 @@ body{
 .navbar .nav-link:hover {
     font-weight: 700 !important;
     font-size: 0.8rem !important;
-    color:  #495057 !important;
-    background-color:  #f3c745;
-    border-color:  #f3c745;
+    color: #495057 !important;
+    background-color: #f3c745;
+    border-color: #f3c745;
     border-radius: 0.25rem !important;
     line-height: 1.0 !important;
-    box-shadow:  2px 2px 2px 2px rgba(0.28, 0.31, 0.34, 0.5) ;
+    box-shadow: 2px 2px 2px 2px rgba(0.28, 0.31, 0.34, 0.5);
 }
 
-.btn-warning-hollow{
+.btn-warning-hollow {
     color: #fff;
-    background-color:  #f3c745;
-    border-color:  #f3c745;
+    background-color: #f3c745;
+    border-color: #f3c745;
     line-height: 1.0 !important;
     font-size: 0.8rem !important;
-    box-shadow:  1px 1px 2px 2px rgba(0.28, 0.31, 0.34, 0.5);
+    box-shadow: 1px 1px 2px 2px rgba(0.28, 0.31, 0.34, 0.5);
     font-weight: bold;
 }
 
-.btn-light-hollow{
+.btn-light-hollow {
     line-height: 1.0 !important;
     font-size: 0.8rem !important;
-    box-shadow:  1px 1px 2px 2px rgba(0.28, 0.31, 0.34, 0.5);
+    box-shadow: 1px 1px 2px 2px rgba(0.28, 0.31, 0.34, 0.5);
     font-weight: bold;
 }
 
 /* Hollow color for details*/
 
-.yellow-hollow{
+.yellow-hollow {
     color: #f3c745 !important;
 }
 
-.gray-hollow{
+.gray-hollow {
     background-color: #495057;
 }
 
-.img-hollow{
+.img-hollow {
     width: 50%
 }
 
-.icone-hollow{
+.icone-hollow {
     width: 60px !important;
     height: auto;
 }
 
-.ribbon-hollow{
+.ribbon-hollow {
     background-color: #f3c745 !important;
     color: white;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@ body{
     vertical-align: middle;
 }
 
-.ribbon-hollow-white{
+.ribbon-hollow-white {
     background-color: #fff !important;
     color: white;
     background-repeat: no-repeat;
@@ -76,50 +76,55 @@ body{
     background-position: center;
     vertical-align: middle;
 }
-i{
+
+i {
     font-size: 2em;
     color: #495057 !important;
     opacity: 65%;
 }
+
 a {
     color: #7d7d7d;
     text-decoration: none;
     background-color: transparent;
 }
-a:hover{
-    color:#f3c745 !important;
+
+a:hover {
+    color: #f3c745 !important;
     text-decoration: none;
     background-color: transparent;
 }
 
-ul{
-    list-style-type:none;
+ul {
+    list-style-type: none;
     font-size: 0.8rem !important;
     font-weight: 700 !important;
 }
+
 /*Footer*/
-.bg-footer{
+.bg-footer {
     background-color: #f0f0f0;
 }
-.shadow-footer{
+
+.shadow-footer {
     width: 50px;
     height: auto;
     text-align: right;
-    box-shadow:  1px 1px 2px 2px rgba(0.28, 0.31, 0.34, 0.5) ;
+    box-shadow: 1px 1px 2px 2px rgba(0.28, 0.31, 0.34, 0.5);
 }
 
 
 /*Header image*/
 div.image-header {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  top: 0px;
-  position: relative;
-  left: 0px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    top: 0px;
+    position: relative;
+    left: 0px;
 }
 
-.image-1{
+.image-1 {
     object-fit: cover;
     z-index: 1;
     margin-top: 0;
@@ -134,11 +139,11 @@ div.image-header {
 }
 
 .img-icon {
-  width: 8vw;
+    width: 8vw;
 }
 
 /*Fonts*/
 @font-face {
-  font-family: League Spartan Bold;
-  src: url('../fonts/LeagueSpartan-Bold.otf');
+    font-family: League Spartan Bold;
+    src: url('../fonts/LeagueSpartan-Bold.otf');
 }
