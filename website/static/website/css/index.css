@@ -14,3 +14,10 @@
   margin-top: 13%;
   padding-left: 2.5%;
 }
+
+#buttons {
+  position: absolute;
+  margin-top: -17%;
+  width: 100%;
+  text-align: center;
+}
