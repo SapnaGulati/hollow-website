@@ -1,3 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+
+}
+
 #header-image-bg {
   width: 100%;
+}
+
+#transforme-bg {
+  width: 95%;
+  position: absolute;
+  margin-top: 13%;
+  padding-left: 2.5%;
 }
