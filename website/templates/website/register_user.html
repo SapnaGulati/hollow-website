@@ -4,30 +4,6 @@
 {% block title %}Hollow - novo estudante{% endblock title %}
 
 {% block content %}
-
-    {#    <div>#}
-    {#    <form class="form" action="{% url 'login' %}" method="POST">#}
-    {#    {% csrf_token %}#}
-    {#    {% if messages %}#}
-    {#        <ul class="messages">#}
-    {#            {% for message in messages %}#}
-    {#                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>#}
-    {#            {% endfor %}#}
-    {#        </ul>#}
-    {#    {% endif %}#}
-    {#    <div class="form-group col-6">#}
-    {#        <label for="exampleInputEmail1">Endereço de e-mail</label>#}
-    {#        <input type="email" class="form-control required" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="email">#}
-    {#        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>#}
-    {#    </div>#}
-    {#    <div class="form-group col-6">#}
-    {#        <label for="InputPassword1">Password</label>#}
-    {#        <input type="password" class="form-control" id="InputPassword1" placeholder="Senha" name="password" >#}
-    {#    </div>#}
-    {#    <button type="submit" class="btn btn-warning-hollow">Se conectar</button>#}
-    {#</form>#}
-    {##}
-    {#    </div>#}
     <section id="ribbon-hollow">
         <div class="container-fluid px-0 mx-0 ribbon-hollow mt-6" style="background-image: url('{% static 'website/img/bg_word.png' %}');">
             <div class="row">
@@ -51,15 +27,6 @@
 
             <form method="POST" enctype='multipart/form-data' id="userForm">
                 {% csrf_token %}
-                {#                {% for field in user_registration_form %}#}
-                {#                    <div class="form-control font-weight-bold">#}
-                {#                        {{ user_registration_form | crispy }}#}
-                {#                        {% for error in field.errors %}#}
-                {#                            <small class="errors form-text text-muted">{{ error }}</small>#}
-                {#                        {% endfor %}#}
-                {#                    </div>#}
-                {#                {% endfor %}#}
-
                 <div class="form-row">
                     <div class="form-group col-md-4 mb-2">
                         {{ user_registration_form.first_name|as_crispy_field }}
@@ -135,16 +102,6 @@
                         </a>
                     </div>
                 </div>
-                {#                    {% for field in form.visible_fields %}#}
-                {#                        <div class="form-group col-6 col-lg-3 col-md-3">#}
-                {#                            {{ field.label_tag | upper }}#}
-                {#                            {% render_field field class="form-control selectpicker search-fields" style="border-radius:0px" %}#}
-                {#                            {% if field.help_text %}#}
-                {#                                <small class="form-text text-muted">{{ field.help_text | upper }}</small>#}
-                {#                            {% endif %}#}
-                {#                        </div>#}
-                {#                    {% endfor %}#}
-
             </form>
         </div>
     </div>
