@@ -1,6 +1,6 @@
 {% extends 'website/layout/base.html' %}
 {% load static %}
-
+{% load crispy_forms_tags %}
 {% block title %}Hollow - novo estudante{% endblock title %}
 
 {% block content %}
@@ -28,36 +28,127 @@
     {#</form>#}
     {##}
     {#    </div>#}
-
-    <div class="container py-2">
-        <div id="userForm">
-            <div class="card card-body">
-                Les champs suivis d'une astérisque sont obligatoires. <br>
-                <form method="POST" enctype='multipart/form-data'>
-                    {% csrf_token %}
-                    {% for field in user_registration_form %}
-                        <p>
-                            {{ field | as_crispy_field }}
-                            {% for error in field.errors %}
-                                <small class="errors">{{ error }}</small>
-                            {% endfor %}
-                        </p>
-                    {% endfor %}
-                    {#                    {% for field in form.visible_fields %}#}
-                    {#                        <div class="form-group col-6 col-lg-3 col-md-3">#}
-                    {#                            {{ field.label_tag | upper }}#}
-                    {#                            {% render_field field class="form-control selectpicker search-fields" style="border-radius:0px" %}#}
-                    {#                            {% if field.help_text %}#}
-                    {#                                <small class="form-text text-muted">{{ field.help_text | upper }}</small>#}
-                    {#                            {% endif %}#}
-                    {#                        </div>#}
-                    {#                    {% endfor %}#}
-
-                    <button class="btn btn-primary" type="submit" name="user_registration">S'inscrire</button>
-                </form>
+    <section id="ribbon-hollow">
+        <div class="container-fluid px-0 mx-0 ribbon-hollow mt-6" style="background-image: url('{% static 'website/img/bg_word.png' %}');">
+            <div class="row">
+                <div class="col-md-2 py-3 px-5 align-self-center text-right">
+                    <img class="icone-hollow" src="{% static 'website/img/pc_people.svg' %}" alt="Card image cap">
+                </div>
+                <div class="col-md-7 col-sm-12 py-2 px-sm-1 mx-sm-3 align-self-center">
+                    <h3>
+                        Inscreva-se e comece a estudar agora mesmo
+                    </h3>
+                    <h5> Potencialize seu desempenho. </h5>
+                </div>
             </div>
         </div>
+    </section>
+    <div class="container py-2 mt-2 col-md-8">
+        <div class="card card-body text-left">
+            <div class="text-left mb-2">
+                Os campos com asterisco são obrigatórios.
+            </div>
+
+            <form method="POST" enctype='multipart/form-data' id="userForm">
+                {% csrf_token %}
+                {#                {% for field in user_registration_form %}#}
+                {#                    <div class="form-control font-weight-bold">#}
+                {#                        {{ user_registration_form | crispy }}#}
+                {#                        {% for error in field.errors %}#}
+                {#                            <small class="errors form-text text-muted">{{ error }}</small>#}
+                {#                        {% endfor %}#}
+                {#                    </div>#}
+                {#                {% endfor %}#}
+
+                <div class="form-row">
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.first_name|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.last_name|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.email|as_crispy_field }}
+                    </div>
+                </div>
+                <div class="form-row text-left">
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.password1|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.password2|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.telephone|as_crispy_field }}
+                    </div>
+                </div>
+                <div class="form-row text-left">
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.gender|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.photo|as_crispy_field }}
+                    </div>
+                </div>
+                <div class="form-row text-left">
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.birthday|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.job_title|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 mb-2 pt-3">
+                        {{ user_registration_form.is_subscribed_newsletter|as_crispy_field }}
+                    </div>
+                </div>
+                <div class="form-row text-left">
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.twitter_link|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.linkedin_link|as_crispy_field }}
+                    </div>
+                </div>
+                <div class="form-row text-left">
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.address|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.address_complement|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.zip_code|as_crispy_field }}
+                    </div>
+                </div>
+                <div class="form-row text-left">
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.city|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        {{ user_registration_form.country|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-4 align-self-end ">
+                        <a href="{% url 'form_user' %}">
+                            <button class="btn-warning-hollow" type="button">
+                                Se cadastrar
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                {#                    {% for field in form.visible_fields %}#}
+                {#                        <div class="form-group col-6 col-lg-3 col-md-3">#}
+                {#                            {{ field.label_tag | upper }}#}
+                {#                            {% render_field field class="form-control selectpicker search-fields" style="border-radius:0px" %}#}
+                {#                            {% if field.help_text %}#}
+                {#                                <small class="form-text text-muted">{{ field.help_text | upper }}</small>#}
+                {#                            {% endif %}#}
+                {#                        </div>#}
+                {#                    {% endfor %}#}
+
+            </form>
+        </div>
     </div>
+
 
 
 {% endblock content %} }}
