@@ -4,6 +4,8 @@
 
 }
 
+
+
 #header-image-bg {
   width: 100%;
 }
@@ -20,4 +22,27 @@
   margin-top: -17%;
   width: 100%;
   text-align: center;
+}
+
+.button {
+  color: #4D4C4D;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #4D4C4D;
+}
+
+.button-bg {
+  background-color: #E8C854;
+  padding: 1vw 2vw 1vw 2vw;
+  border-radius: 1vw;
+  text-shadow: none;
+  font-weight: 700;
+  box-shadow: 2px 2px 5px #4D4C4D;
+}
+
+.button-bg:hover {
+  background-color: #4D4C4D;
+  padding: 1vw 2vw 1vw 2vw;
+  text-decoration: none;
+  border-radius: 1vw;
 }
