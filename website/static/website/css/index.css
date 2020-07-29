@@ -77,26 +77,25 @@
 }
 
 .card-content {
+  box-shadow: 4px 4px 7px #4d4c4d;
+  border-radius: 10px 10px 10px 10px;
   align-items: center;
 
-  border: 1px solid black;
   width: 30vw;
   height: 30vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  
+  justify-content: space-evenly;
 }
 
 .imgs {
-  width: 25%;
+  width: 30%;
 }
 
-
 .card-title {
- 
-  margin-bottom: 16px;
-  font-size: 4vw;
-  color: #E8C854;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 3vw;
+  color: #e8c854;
   font-weight: bold;
 }
