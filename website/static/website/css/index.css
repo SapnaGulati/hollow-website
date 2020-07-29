@@ -47,7 +47,6 @@
 #background-img {
   width: 100%;
   position: absolute;
-  padding-left: 2.5%;
 }
 
 .body-content-1 {
@@ -104,6 +103,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 7%;
 }
 
 #sign-in-img {
@@ -137,4 +137,26 @@
   padding: 1vw 3vw 1vw 3vw;
   text-decoration: none;
   border-radius: 1vw;
+}
+
+#our-courses-section {
+  display: flex;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  flex-direction: row;
+}
+
+#our-courses {
+  display: flex;
+  width: 45%;
+  text-align: center;
+  flex-direction: column;
+}
+
+#our-courses-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
