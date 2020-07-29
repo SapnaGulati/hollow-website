@@ -31,3 +31,38 @@
     text-shadow: none;
     box-shadow: 2px 2px 5px #4d4c4d;
   }
+
+#rules-img{
+    height: 70vh;
+    
+}
+
+#rules-subtitle{
+    position: absolute;
+    left: -12vw;
+    font-weight: 700;
+    font-size: 6vh;
+}
+
+#text-on-left {
+    display: flex;
+    margin-bottom: 10vw;
+    margin-bottom: 0px;
+}
+
+#text-on-left ul{
+    display: flex;
+    margin-bottom: 10vw;
+    list-style-type: circle; 
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+#text-on-left ul li{
+    font-size: 3vh;
+}
+
+.img-icon {
+    width: 8vw;
+}
+
