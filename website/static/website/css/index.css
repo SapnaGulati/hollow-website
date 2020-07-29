@@ -45,12 +45,13 @@
 }
 
 #background-img {
-  width: 95%;
+  width: 100%;
   position: absolute;
   padding-left: 2.5%;
 }
 
 .body-content-1 {
+  flex-direction: column;
   display: flex;
   width: 100%;
 }
@@ -70,19 +71,17 @@
 #content-row {
   width: 100vw;
   height: 100vw;
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 .card-content {
-  box-shadow: 4px 4px 7px #4d4c4d;
+  box-shadow: 2px 2px 5px #858285;
   border-radius: 10px 10px 10px 10px;
   align-items: center;
-
-  width: 30vw;
-  height: 30vw;
+  width: 27vw;
+  height: 27vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

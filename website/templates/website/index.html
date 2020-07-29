@@ -25,33 +25,53 @@ Hollow - Homepage
 
 
 <section id="body-content-1">
-  <img src="{% static 'website/img/home_bg.png' %}"  id="background-img">
+  <img src="{% static 'website/img/home_bg.png' %}" id="background-img">
   <div class="video-section">
-      <iframe width="70%" height="450px" id="video"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe> 
+    <iframe width="70%" height="450px" id="video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
   </div>
   <div id="content-row">
+
     <div class="card-content">
-    <div class="card-title"><p >Vídeo <br> Aulas</p></div>
-      
+      <div class="card-title">
+        <p>Vídeo <br> Aulas</p>
+      </div>
       <img src="{% static 'website/img/pc_yellow.png' %}" class="imgs">
     </div>
+
     <div class="card-content">
-    <div class="card-title"><p >FÓRUM <br>EM DIRETO <br>PRÉ PROVA</p></div>
-      
+      <div class="card-title">
+        <p>FÓRUM <br>EM DIRETO <br>PRÉ PROVA</p>
+      </div>
       <img src="{% static 'website/img/doubt_yellow.png' %}" class="imgs">
     </div>
+
     <div class="card-content">
-    <div><p class="card-title">PROVAS E <br>EXERCÍCIOS<br>RESOLVIDOS</p></div>
-      
+      <div>
+        <p class="card-title">PROVAS E <br>EXERCÍCIOS<br>RESOLVIDOS</p>
+      </div>
       <img src="{% static 'website/img/test_yellow.png' %}" class="imgs">
     </div>
   </div>
- 
+  <div class="container py-3 ribbon-hollow" style="background-image: url('{% static 'website/img/bg_word.png' %}');">
+    <div class="row">
+      <div class="col-md-2 py-3 px-5 align-self-center text-center">
+        <img class="icone-hollow" src="{% static 'website/img/pc_people.svg' %}" alt="Card image cap">
+      </div>
+      <div class="col-md-7 col-sm-12 py-2 px-sm-1 mx-sm-3 align-self-center">
+        <h3>
+          Inscreva-se e comece a estudar agora mesmo
+        </h3>
+        <h5> Potencialize seu desempenho. </h5>
+      </div>
+      <div class="col-md-2 col-sm-12 py-sm-2 mx-sm-3 align-self-center text-center">
+        <a class="btn btn-light btn-light-hollow rounded" href="{% url 'login' %}" role="button">Comece
+          já!</a>
+      </div>
+    </div>
+  </div>
+
 </section>
-
-
 
 
 
@@ -112,31 +132,12 @@ Hollow - Homepage
     </div>
   </div>
 </section>
+-->
 
-<
+
 
 
 <!--
-<section id="ribbon-hollow">
-  <div class="container py-3 ribbon-hollow" style="background-image: url('{% static 'website/img/bg_word.png' %}');">
-    <div class="row">
-      <div class="col-md-2 py-3 px-5 align-self-center text-center">
-        <img class="icone-hollow" src="{% static 'website/img/pc_people.svg' %}" alt="Card image cap">
-      </div>
-      <div class="col-md-7 col-sm-12 py-2 px-sm-1 mx-sm-3 align-self-center">
-        <h3>
-          Inscreva-se e comece a estudar agora mesmo
-        </h3>
-        <h5> Potencialize seu desempenho. </h5>
-      </div>
-      <div class="col-md-2 col-sm-12 py-sm-2 mx-sm-3 align-self-center text-center">
-        <a class="btn btn-light btn-light-hollow rounded" href="{% url 'login' %}" role="button">Comece
-          já!</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="new-courses">
   <div class="container py-3">
     <div class="row">
@@ -183,7 +184,8 @@ Hollow - Homepage
 </section>
 
 <section id="nominate-1-hollow">
-  <div class="container pt-3 my-0 text-center ribbon-hollow-white" style="background-image: url('{% static 'website/img/bg_word_yellow.png' %}')">
+  <div class="container pt-3 my-0 text-center ribbon-hollow-white"
+    style="background-image: url('{% static 'website/img/bg_word_yellow.png' %}')">
     <div class="row">
       <div class="col-md-5 overflow-hidden overlay-content mx-md-0 px-md-0 align-self-center text-right">
         <h2 class="mb-0 font-weight-bold text-uppercase yellow-hollow">Indique e ganhe</h2>
