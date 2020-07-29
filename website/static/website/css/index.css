@@ -1,10 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-
 }
-
-
 
 #header-image-bg {
   width: 100%;
@@ -25,24 +22,48 @@
 }
 
 .button {
-  color: #4D4C4D;
+  color: #4d4c4d;
   font-size: 1.5vw;
   font-weight: 500;
-  text-shadow: 1px 1px 1px #4D4C4D;
+  text-shadow: 1px 1px 1px #4d4c4d;
 }
 
 .button-bg {
-  background-color: #E8C854;
+  background-color: #e8c854;
   padding: 1vw 2vw 1vw 2vw;
   border-radius: 1vw;
   text-shadow: none;
   font-weight: 700;
-  box-shadow: 2px 2px 5px #4D4C4D;
+  box-shadow: 2px 2px 5px #4d4c4d;
 }
 
 .button-bg:hover {
-  background-color: #4D4C4D;
+  background-color: #4d4c4d;
   padding: 1vw 2vw 1vw 2vw;
   text-decoration: none;
   border-radius: 1vw;
+}
+
+
+#background-img {
+  width: 95%;
+  position: absolute;
+  padding-left: 2.5%;
+}
+
+.body-content-1 {
+  display: flex;
+  width: 100%;
+}
+
+.video-section {
+  padding: 10% 10% 10% 10%;
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  text-align: center;
+  width: 70%;
+  box-shadow: 4px 4px 7px #4d4c4d;
 }

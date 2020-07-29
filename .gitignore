@@ -13,3 +13,8 @@
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+
+
+# For vscode lauchers
+
+.vscode/
