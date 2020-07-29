@@ -1,7 +1,6 @@
-@font-face {
-    font-family: League Spartan Bold;
-    src: url('../fonts/LeagueSpartan-Bold.otf');
-}
+/*--------------------------*/
+/*     HEADER STYLESHEET    */
+/*--------------------------*/
 
 #favicon-img {
     width: 3vw;
@@ -29,6 +28,15 @@
     top: 35vh;
 }
 
+/*--------------------------*/
+/* END OF HEADER STYLESHEET */
+/*--------------------------*/
+
+
+/*--------------------------*/
+/* BIG SUBTITLE STYLESHEET  */
+/*--------------------------*/
+
 #share-link-text{
     font-size: 1.5vw;
 }
@@ -48,10 +56,16 @@
     box-shadow: 2px 2px 5px #4d4c4d;
   }
 
+/*---------------------------------*/
+/* END OF BIG SUBTITLE STYLESHEET  */
+/*---------------------------------*/
 
+
+/*-----------------------------------*/
+/* HOW IT WORKS TUTORIAL STYLESHEET  */
+/*-----------------------------------*/
 #rules-img{
     height: 70vh;
-    
 }
 
 #rules-subtitle{
@@ -87,3 +101,8 @@
     font-weight: 700;
     font-size: 6vh;
 }
+
+
+/*------------------------------------------*/
+/* END OF HOW IT WORKS TUTORIAL STYLESHEET  */
+/*------------------------------------------*/
