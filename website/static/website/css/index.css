@@ -44,7 +44,6 @@
   border-radius: 1vw;
 }
 
-
 #background-img {
   width: 95%;
   position: absolute;
@@ -66,4 +65,38 @@
   text-align: center;
   width: 70%;
   box-shadow: 4px 4px 7px #4d4c4d;
+}
+
+#content-row {
+  width: 100vw;
+  height: 100vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card-content {
+  align-items: center;
+
+  border: 1px solid black;
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.imgs {
+  width: 25%;
+}
+
+
+.card-title {
+ 
+  margin-bottom: 16px;
+  font-size: 4vw;
+  color: #E8C854;
+  font-weight: bold;
 }
