@@ -70,7 +70,7 @@
 
 #content-row {
   width: 100vw;
-  height: 100vw;
+  height: 35vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -97,4 +97,16 @@
   font-size: 3vw;
   color: #e8c854;
   font-weight: bold;
+}
+
+#sign-in {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  justify-content: center;
+}
+
+#sign-in-img {
+  position: relative;
+  width: 80vw;
 }
