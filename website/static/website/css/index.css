@@ -44,11 +44,6 @@
   border-radius: 1vw;
 }
 
-#background-img {
-  width: 100%;
-  position: absolute;
-}
-
 .body-content-1 {
   flex-direction: column;
   display: flex;
