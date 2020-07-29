@@ -141,6 +141,7 @@
   padding-right: 5%;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 7%;
 }
 
 #our-courses {
@@ -170,4 +171,36 @@
   width: 45%;
   border-radius: 2px;
   box-shadow: 2px 2px 5px #4d4c4d;
+}
+
+#sign_in_now {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-content: flex-end;
+}
+
+#sign-in-button-div2 {
+  display: flex;
+  position: absolute;
+}
+
+#sign-in-button2 {
+  color: #4D4C4D;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #4d4c4d;
+  background-color: #f1f1f1ff;
+  padding: 1vw 3vw 1vw 3vw;
+  border-radius: 1vw;
+  text-shadow: none;
+  font-weight: 700;
+  box-shadow: 2px 2px 5px #4d4c4d;
+}
+
+#sign-in-button2:hover {
+  background-color: #4d4c4d;
+  padding: 1vw 3vw 1vw 3vw;
+  text-decoration: none;
+  border-radius: 1vw;
 }
