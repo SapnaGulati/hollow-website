@@ -88,7 +88,7 @@
   text-align: center;
   margin-bottom: 15px;
   font-size: 3vw;
-  color: #e8c854;
+  color: #f2c747ff;
   font-weight: bold;
 }
 
@@ -140,6 +140,7 @@
   padding-left: 5%;
   padding-right: 5%;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #our-courses {
@@ -155,4 +156,18 @@
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
+}
+
+#our-courses-text {
+  text-align: left;
+  font-size: 1.5vw;
+  color: #868589;
+  font-weight: bold;
+}
+
+#sugestion {
+  background-color: #f2c747ff;
+  width: 45%;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px #4d4c4d;
 }
