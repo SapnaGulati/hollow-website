@@ -108,6 +108,7 @@
 
 #sign-in-img {
   position: relative;
+  box-shadow: 2px 2px 5px #858285;
   width: 90%;
 }
 
