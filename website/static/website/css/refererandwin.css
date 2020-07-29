@@ -1,0 +1,33 @@
+@font-face {
+    font-family: League Spartan Bold;
+    src: url('../fonts/LeagueSpartan-Bold.otf');
+}
+
+#favicon-img {
+    width: 3vw;
+    right: 8vw;
+    top: 85vh;    
+}
+
+#title-img {
+    top: 35vh;
+}
+
+#share-link-text{
+    font-size: 1.5vw;
+}
+
+.button {
+    background-color: #f3c745; /* Green */
+    font-family: League Spartan Bold;
+    border: none;
+    color: white;
+    padding: 8px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+    border-radius: 0.8vw;
+    text-shadow: none;
+    box-shadow: 2px 2px 5px #4d4c4d;
+  }
