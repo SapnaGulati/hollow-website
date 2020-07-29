@@ -3,8 +3,11 @@
 
 {% block title %}Hollow - Indique e ganhe{% endblock title %}
 {% block content %}
-    <div class="d-flex align-items-center image-header">
-        <img class="image-1 img-fluid" src="{% static 'website/img/referer_n_win_header_img.png' %}">        
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/refererandwin.css' %}">
+    <div class="d-flex align-items-center image-header" id='header-images'>
+        <img class="image-1 img-fluid" src="{% static 'website/img/referer_n_win_header_img.png' %}">
+        <img class="image-page-title" id="title-img" src="{% static 'website/img/referer_n_win_title_img.png' %}">
+        <img class="image-page-title" id="favicon-img" src="{% static 'website/img/favicon-hollow.png' %}">
     </div>
     <!--image-header-->
     {#    TODO: change background image#}
