@@ -5,9 +5,9 @@
 {% block content %}
     <link rel="stylesheet" type="text/css" href="{% static 'website/css/refererandwin.css' %}">
     <div class="d-flex align-items-center image-header" id='header-images'>
-        <img class="image-1 img-fluid" src="{% static 'website/img/referer_n_win_header_img.png' %}">
-        <img class="image-page-title" id="title-img" src="{% static 'website/img/referer_n_win_title_img.png' %}">
-        <img class="image-page-title" id="favicon-img" src="{% static 'website/img/favicon-hollow.png' %}">
+        <img class="image-header-bg img-fluid" src="{% static 'website/img/referer_n_win_header_img.png' %}">
+        <img class="image-header-title" id="title-img" src="{% static 'website/img/referer_n_win_title_img.png' %}">
+        <img class="image-header-title" id="favicon-img" src="{% static 'website/img/favicon-hollow.png' %}">
     </div>
     <!--image-header-->
     {#    TODO: change background image#}
@@ -20,11 +20,13 @@
                 <h2 class="yellow-hollow font-weight-bold text-capitalize">COMO FUNCIONA?</h2>
                 <div class="container text-center col-8">
                     <h3 class="text-muted text-center" id="share-link-text">
-                        Compartilhe o link gerado com os seus amigos
-                        O seu amigo aplica o link no nosso site
+                        Compartilhe o link gerado com os seus amigos</h3>
+                    <h3 class="text-muted text-center" id="share-link-text">    
+                        O seu amigo aplica o link no nosso site</h3>
+                    <h3 class="text-muted text-center" id="share-link-text">
                         Pronto! Agora os dois têm acesso gratuito!</h3>
                     <button class='button' type="button">
-                        <a class='generate-link-text'>Gerar link agora mesmo!</a>
+                        <a>Gerar link agora mesmo!</a>
                     </button>
                 </div>
             </div>
