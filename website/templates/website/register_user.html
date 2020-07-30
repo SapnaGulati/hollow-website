@@ -1,6 +1,6 @@
 {% extends 'website/layout/base.html' %}
 {% load static %}
-{% load crispy_forms_tags %}
+{% load bootstrap %}
 {% block title %}Hollow - novo estudante{% endblock title %}
 
 {% block content %}
@@ -20,91 +20,94 @@
             </div>
         </div>
     </section>
-    <div class="container py-2 mt-2 col-md-8">
-        <div class="card card-body text-left">
-            <div class="text-left mb-2">
-                Os campos com asterisco são obrigatórios.
+    <div class="container py-2 mt-4 col-md-8">
+        {#        <div class="card card-body text-left">#}
+        <form method="POST" enctype='multipart/form-data' id="userForm">
+            {% csrf_token %}
+            <div class="form-row text-left">
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.password1.label_tag }}</p>
+                    {{ user_registration_form.password1 }}
+                    {% if not user_registration_form.password1.help_text %}
+                        <small class="form-text text-muted">{{ user_registration_form.password1.help_text}}</small>
+                    {% endif %}
+                </div>
+                <div class="form-group col-md-6 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.password2.label_tag }}</p>
+                    {{ user_registration_form.password2 }}
+                </div>
+            </div>
+            <div class="form-row text-left">
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.telephone.label_tag }}</p>
+                    {{ user_registration_form.telephone }}
+                </div>
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.gender.label_tag }}</p>
+                    {{ user_registration_form.gender }}
+                </div>
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.photo.label_tag }}</p>
+                    {{ user_registration_form.photo }}
+                </div>
+            </div>
+            <div class="form-row text-left">
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.birthday.label_tag }}</p>
+                    {{ user_registration_form.birthday }}
+                </div>
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.job_title.label_tag }}</p>
+                    {{ user_registration_form.job_title }}
+                </div>
+                <div class="form-group col-md-4 mb-2 pt-3">
+                    <p style="text-transform: uppercase">{{user_registration_form.is_subscribed_newsletter.label_tag }}</p>
+                    {{ user_registration_form.is_subscribed_newsletter }}
+                </div>
+            </div>
+            <div class="form-row text-left">
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.twitter_link.label_tag }}</p>
+                    {{ user_registration_form.twitter_link }}
+                </div>
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.linkedin_link.label_tag }}</p>
+                    {{ user_registration_form.linkedin_link }}
+                </div>
+            </div>
+            <div class="form-row text-left">
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.address.label_tag }}</p>
+                    {{ user_registration_form.address }}
+                </div>
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.address_complement.label_tag }}</p>
+                    {{ user_registration_form.address_complement }}
+                </div>
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.zip_code.label_tag }}</p>
+                    {{ user_registration_form.zip_code }}
+                </div>
+            </div>
+            <div class="form-row text-left">
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.city.label_tag }}</p>
+                    {{ user_registration_form.city }}
+                </div>
+                <div class="form-group col-md-4 mb-2">
+                    <p style="text-transform: uppercase">{{user_registration_form.country.label_tag }}</p>
+                    {{ user_registration_form.country }}
+                </div>
+                <div class="form-group col-md-4 align-self-end ">
+                    <a href="{% url 'form_user' %}">
+                        <button class="btn-warning-hollow" type="submit">
+                            Se cadastrar
+                        </button>
+                    </a>
+                </div>
             </div>
 
-            <form method="POST" enctype='multipart/form-data' id="userForm">
-                {% csrf_token %}
-                <div class="form-row">
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.first_name|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.last_name|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.email|as_crispy_field }}
-                    </div>
-                </div>
-                <div class="form-row text-left">
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.password1|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.password2|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.telephone|as_crispy_field }}
-                    </div>
-                </div>
-                <div class="form-row text-left">
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.gender|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.photo|as_crispy_field }}
-                    </div>
-                </div>
-                <div class="form-row text-left">
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.birthday|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.job_title|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 mb-2 pt-3">
-                        {{ user_registration_form.is_subscribed_newsletter|as_crispy_field }}
-                    </div>
-                </div>
-                <div class="form-row text-left">
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.twitter_link|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.linkedin_link|as_crispy_field }}
-                    </div>
-                </div>
-                <div class="form-row text-left">
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.address|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.address_complement|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.zip_code|as_crispy_field }}
-                    </div>
-                </div>
-                <div class="form-row text-left">
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.city|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 mb-2">
-                        {{ user_registration_form.country|as_crispy_field }}
-                    </div>
-                    <div class="form-group col-md-4 align-self-end ">
-                        <a href="{% url 'form_user' %}">
-                            <button class="btn-warning-hollow" type="button">
-                                Se cadastrar
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </form>
-        </div>
+        </form>
     </div>
 
 
