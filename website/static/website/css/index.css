@@ -169,6 +169,7 @@
 
 
 #sign_in_now {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
@@ -178,6 +179,7 @@
 #sign-in-button-div2 {
   display: flex;
   position: absolute;
+  bottom: 5vw;
 }
 
 #sign-in-button2 {
@@ -191,6 +193,7 @@
   text-shadow: none;
   font-weight: 700;
   box-shadow: 2px 2px 5px #4d4c4d;
+
 }
 
 #sign-in-button2:hover {
@@ -210,17 +213,10 @@
   box-shadow: 2px 2px 5px #4d4c4d;
 }
 
-#line-one-sugestion {
+.line-sugestion {
+  height: 1.5vh;
   text-align: center;
   font-size: 1.3vw;
-  font-weight: bolder;
-  color: aliceblue;
-  font-family: League Spartan Bold;
-}
-
-#line-to-sugestion {
-  text-align: center;
-  font-size: 1.5vw;
   font-weight: bolder;
   color: aliceblue;
   font-family: League Spartan Bold;
