@@ -148,3 +148,10 @@ div.image-header {
     font-family: League Spartan Bold;
     src: url('../fonts/LeagueSpartan-Bold.otf');
 }
+
+/*Form*/
+
+.form-control {
+    height: 1.5rem !important;
+    padding: 0.1rem !important;
+}
