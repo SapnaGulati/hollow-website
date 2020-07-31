@@ -5,7 +5,7 @@ from django.db import models
 
 class Course(models.Model):
     title = models.CharField(verbose_name='Título' ,max_length=200)
-    macrotopic = models.ForeignKey('Macrotopic', on_delete=models.CASCADE)
+    macrotopic = models.ManyToManyField('Macrotopic', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
@@ -17,7 +17,7 @@ class Course(models.Model):
 
 class Macrotopic(models.Model):
     title = models.CharField(max_length=200)
-    microtopic = models.ForeignKey('Microtopic', on_delete=models.CASCADE)
+    microtopic = models.ManyToManyField('Microtopic', on_delete=models.CASCADE)
     exercise_list = models.ForeignKey('ExerciseList', verbose_name='lista de exercícios', on_delete=models.CASCADE)
     
     def __str__(self):
