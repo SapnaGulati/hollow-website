@@ -1,5 +1,6 @@
 {% extends 'website/layout/base.html' %}
 {% load static %}
+{% load widget_tweaks %}
 {% load bootstrap %}
 {% block title %}Hollow - novo estudante{% endblock title %}
 
@@ -24,89 +25,35 @@
         {#        <div class="card card-body text-left">#}
         <form method="POST" enctype='multipart/form-data' id="userForm">
             {% csrf_token %}
-            <div class="form-row text-left">
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.password1.label_tag }}</p>
-                    {{ user_registration_form.password1 }}
-                    {% if not user_registration_form.password1.help_text %}
-                        <small class="form-text text-muted">{{ user_registration_form.password1.help_text}}</small>
-                    {% endif %}
-                </div>
-                <div class="form-group col-md-6 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.password2.label_tag }}</p>
-                    {{ user_registration_form.password2 }}
-                </div>
-            </div>
-            <div class="form-row text-left">
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.telephone.label_tag }}</p>
-                    {{ user_registration_form.telephone }}
-                </div>
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.gender.label_tag }}</p>
-                    {{ user_registration_form.gender }}
-                </div>
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.photo.label_tag }}</p>
-                    {{ user_registration_form.photo }}
-                </div>
-            </div>
-            <div class="form-row text-left">
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.birthday.label_tag }}</p>
-                    {{ user_registration_form.birthday }}
-                </div>
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.job_title.label_tag }}</p>
-                    {{ user_registration_form.job_title }}
-                </div>
-                <div class="form-group col-md-4 mb-2 pt-3">
-                    <p style="text-transform: uppercase">{{user_registration_form.is_subscribed_newsletter.label_tag }}</p>
-                    {{ user_registration_form.is_subscribed_newsletter }}
-                </div>
-            </div>
-            <div class="form-row text-left">
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.twitter_link.label_tag }}</p>
-                    {{ user_registration_form.twitter_link }}
-                </div>
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.linkedin_link.label_tag }}</p>
-                    {{ user_registration_form.linkedin_link }}
-                </div>
-            </div>
-            <div class="form-row text-left">
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.address.label_tag }}</p>
-                    {{ user_registration_form.address }}
-                </div>
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.address_complement.label_tag }}</p>
-                    {{ user_registration_form.address_complement }}
-                </div>
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.zip_code.label_tag }}</p>
-                    {{ user_registration_form.zip_code }}
-                </div>
-            </div>
-            <div class="form-row text-left">
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.city.label_tag }}</p>
-                    {{ user_registration_form.city }}
-                </div>
-                <div class="form-group col-md-4 mb-2">
-                    <p style="text-transform: uppercase">{{user_registration_form.country.label_tag }}</p>
-                    {{ user_registration_form.country }}
-                </div>
-                <div class="form-group col-md-4 align-self-end ">
-                    <a href="{% url 'form_user' %}">
-                        <button class="btn-warning-hollow" type="submit">
-                            Se cadastrar
-                        </button>
-                    </a>
-                </div>
-            </div>
 
+            <div class="form-row text-left">
+                {% for hidden_field in user_registration_form.hidden_fields %}
+                    {{ hidden_field | upper}}
+                {% endfor %}
+
+                {% for field in user_registration_form.visible_fields %}
+
+                    <div class="form-group col-md-4 mb-2">
+                        <label>{{ field.label_tag }}</label>
+                        {% if field.id_for_label == 'id_is_subscribed_newsletter' %}
+                            {% render_field field class="form-check-input mr-5" %}
+                        {% else %}
+                            {% render_field field class="form-control" %}
+                        {% endif %}
+
+                        {% if field.help_text %}
+                            <small class="form-text text-muted">{{ field.help_text | safe}}</small>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="form-group col-md-12 text-center mt-2">
+                <a href="{% url 'form_user' %}">
+                    <button class="btn-warning-hollow" type="submit">
+                        Se cadastrar
+                    </button>
+                </a>
+            </div>
         </form>
     </div>
 
