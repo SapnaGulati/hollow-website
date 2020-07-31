@@ -41,7 +41,7 @@ class Macrotopic(models.Model):
 class Microtopic(models.Model):
     # DATABASE FIELDS
     title = models.CharField(verbose_name='Título', max_length=200)
-    video = models.ForeignKey('VideoLesson', verbose_name='Vídeoaula', on_delete=models.CASCADE)
+    video = models.ForeignKey('VideoLesson', verbose_name='Videoaula', on_delete=models.CASCADE)
     importance = models.SmallIntegerField(verbose_name='Importância')
 
     # META CLASS
@@ -64,13 +64,13 @@ class VideoLesson(models.Model):
 
     # META CLASS
     class Meta:
-        verbose_name = 'Vídeoaula'
-        verbose_name_plural = 'Vídeoaulas'
+        verbose_name = 'Videoaula'
+        verbose_name_plural = 'Videoaulas'
 
     # TO STRING METHOD
     def __str__(self):
         return self.title 
-           
+
 
 class ExerciseList(models.Model):
     # DATABASE FIELDS
