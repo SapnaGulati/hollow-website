@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'website.apps.WebsiteConfig',
     'phonenumber_field',
     'crispy_forms',
+    'widget_tweaks',
+    'bootstrapform'
 ]
 
 MIDDLEWARE = [
