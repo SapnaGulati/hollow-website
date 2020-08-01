@@ -173,7 +173,7 @@
   text-shadow: 1px 1px 1px #4d4c4d;
   background-color: #f1f1f1ff;
   padding: 1vw 3vw 1vw 3vw;
-  border-radius: 1vw;
+  border-radius: 0.7vw;
   text-shadow: none;
   font-weight: 700;
   box-shadow: 2px 2px 5px #4d4c4d;
@@ -232,7 +232,7 @@
   text-shadow: 1px 1px 1px #4d4c4d;
   background-color: #f1f1f1ff;
   padding: 1vw 3vw 1vw 3vw;
-  border-radius: 1vw;
+  border-radius: 0.7vw;
   text-shadow: none;
   font-weight: 700;
   box-shadow: 2px 2px 5px #4d4c4d;
@@ -304,9 +304,9 @@
 }
 
 /* Refer and win */
-#refer-win {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-bottom: 17%;
+#refer-button {
+  position: absolute;
+  margin-top: 6vw;
+  width: 90%;
+  text-align: center;
 }

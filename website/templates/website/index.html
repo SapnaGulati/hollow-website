@@ -126,10 +126,14 @@ Hollow - Homepage
     </div>
   </div>
 
-  <div id="refer-win">
-    <img src="{% static 'website/img/refer_win.png' %}"
-      style="width: 90%;box-shadow: 2px 2px 5px #4d4c4d;position:absolute;">
+  <div id="sign-in">
+    <div id="sign-in-img">
+      <img src="{% static 'website/img/refer_win.png' %}" style="width: 100%;">
 
+    </div>
+    <div id="refer-button">
+      <a id="sign-in-button" href="{% url 'referandwin' %}">Convide um amigo</a>
+    </div>
   </div>
 
 </section>
