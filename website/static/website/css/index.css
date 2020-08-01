@@ -219,14 +219,6 @@
   font-weight: bold;
 }
 
-#sign_in_now {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-  align-content: flex-end;
-}
-
 #sign-in-button-div2 {
   display: flex;
   position: absolute;
@@ -300,3 +292,15 @@
 #send-sugestion-button:hover {
   text-decoration: none;
 }
+
+/* Inscreva se ja */
+#sign_in_now {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-content: flex-end;
+  margin-bottom: 7%;
+}
+
+/* Refer and win */
