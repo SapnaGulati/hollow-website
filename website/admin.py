@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Course, Macrotopic, Microtopic, VideoLesson, ExerciseList
+from website.models import Course, Macrotopic, Microtopic, VideoLesson, ExerciseList
 
 # Register your models here.
 
