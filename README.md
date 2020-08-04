@@ -9,9 +9,9 @@ The project is currently in development.
 ### Prerequisites 
 
 
-1. [`Django 3.0.8`](https://docs.djangoproject.com/en/3.0/releases/2.2.10/)
+1. [`Django 3.1`](https://docs.djangoproject.com/en/dev/releases/3.1/)
 2. [`Python 3.8.3`](https://www.python.org/downloads/release/python-374/)
-3. (Not fixed yet) [`PostgreSQL 12`](https://www.postgresql.org/download/)
+3. [`PostgreSQL 12`](https://www.postgresql.org/download/)
 3. For others requirements, see `requirements.txt`
 
 ## Run the project
@@ -19,7 +19,7 @@ The project is currently in development.
 Clone  the project on your machine and change the directory : 
 ```bash
 $ git clone git@github.com:CodeAndCoffee55/hollow-website.git
-$ cd intranet/
+$ cd website/
 ```
 [Create](https://www.guru99.com/postgresql-create-database.html) the database:
 - Open the SQL Shell (psql)
