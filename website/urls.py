@@ -1,13 +1,17 @@
 from django.conf.urls import url
 from django.urls import path
 
-from . import views
+from website import views
 
 urlpatterns = [
     path('', views.IndexView.index, name='index'),
+    path('usuário/', views.UserView.user, name='user_profile'),
+    path('usuário/mudar-informações', views.ChangeInformationView.change_information, name='change_information'),
+    path('usuário/mudar-senha', views.ChangePasswordView.changed_password, name='change_password'),
+    path('usuário/<int:user_id>', views.UserView.user_profile),
     path('login/', views.LoginView.login, name='login'),
     path('logout/', views.LogoutView.logout, name='logout'),
-    path('cadastro/', views.RegisterView.register, name='register'),
+    path('cadastro/', views.RegisterView.register_user, name='register'),
     path('cadastro/aluno/', views.RegisterView.register_user, name='form_user'),
     path('indique-e-ganhe/', views.ReferAndWinView.as_view, name='referandwin'),
     path('como-funciona', views.HowItWorksView.as_view, name='howitworks'),

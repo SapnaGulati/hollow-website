@@ -3,9 +3,11 @@
 
 {% block title %}Hollow - Indique e ganhe{% endblock title %}
 {% block content %}
-    <div class="d-flex align-items-center image-header">
-        <img class="image-1 img-fluid" src="{% static 'website/img/big_image_01.png' %}">
-        <img class="image-page-title" src="{% static 'website/img/how_it_works_title.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/refererandwin.css' %}">
+    <div class="d-flex align-items-center image-header" id='header-images'>
+        <img class="image-header-bg img-fluid" src="{% static 'website/img/referer_n_win_header_img.png' %}">
+        <img class="image-header-title" id="title-img" src="{% static 'website/img/referer_n_win_title_img.png' %}">
+        <img class="image-header-title" id="favicon-img" src="{% static 'website/img/favicon-hollow.png' %}">
     </div>
     <!--image-header-->
     {#    TODO: change background image#}
@@ -15,13 +17,17 @@
     >
         <div class="row py-4">
             <div class="col-12 text-center">
-                <h2 class="yellow-hollow font-weight-bold text-capitalize">COMO FUNCIONA?</h2>
+                <h2 class="yellow-hollow" id="tutorial-subtitle">COMO FUNCIONA?</h2>
                 <div class="container text-center col-8">
-                    <h3 class="text-muted text-center">Inscreva-se e comece a estudar agora mesmo
-                        Compartilhe o link gerado com os seus amigos
-                        O seu amigo aplica o link no nosso site
+                    <h3 class="text-muted text-center" id="share-link-text">
+                        Compartilhe o link gerado com os seus amigos</h3>
+                    <h3 class="text-muted text-center" id="share-link-text">    
+                        O seu amigo aplica o link no nosso site</h3>
+                    <h3 class="text-muted text-center" id="share-link-text">
                         Pronto! Agora os dois têm acesso gratuito!</h3>
-                    <button type="button">Gerar link agora mesmo!</button>
+                    <button class='button' type="button">
+                        <a>Gerar link agora mesmo!</a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -29,36 +35,39 @@
         <!--text-1-->
         <!--text-on-right-->
         <div class="row py-4 px-5">
-            <div class="col-md-6 col-sm-12 py-2 align-self-center">
-                <img class="img-fluid shadow-lg align-self-center" src="{% static 'website/img/group_pre_test.png' %}">
+            <div class="col-md-6 col-sm-12 py-2 align-self-center" style='bottom: 0;'>
+                <img  id='rules-img' src="{% static 'website/img/girls.png' %}">
             </div>
-            <div class="col-md-6 col-sm-12 py-2 text-right align-self-center">
-                <h2 class="yellow-hollow font-weight-bold text-capitalize">REGRAS</h2>
-                <ul class="text-muted text-left">
-                    <li>Não poderão utilizar o cupão de um amigo, os
-                        indivíduos nas seguintes situações
-                    </li>
-                    <li>Aqueles que são ou já foram assinantes da
-                        Hollow;
-                    </li>
-                    <li>Aqueles que já utilizaram o cupão uma vez.
-                    </li>
-                    <li>Os usuários terão de ser pessoas reais, com
-                        NIF e conta própria no Facebook; caso
-                        contrário, serão entendidos como robôs
-                    </li>
-                    <li>O indivíduo com o link poderá ter o seu
-                        cupão utilizado no máximo 5 vezes. Ou seja,
-                        tem um máximo de 25 dias de acesso gratuito.
-                    </li>
-                    <li>A Hollow tem o direito de cancelar o cupão
-                        de qualquer usuário que desrespeitar as
-                        regras
-                    </li>
-                </ul>
-                <div class="py-2">
-                    <img class="img-icon" src="{% static 'website/img/doubt_yellow.png' %}">
+            <div class="col-md-6 col-sm-12 py-2 align-self-center" >
+                <h2 class="yellow-hollow" id="rules-subtitle">REGRAS</h2>
+                <div id="text-on-left">
+                    <ul class="text-muted text-left" >
+                        <li style="list-style-type: None;">Não poderão utilizar o cupão de um amigo, os
+                            indivíduos nas seguintes situações:
+                        </li>
+                        <li style="list-style-type: None;">
+                            <br>
+                        </li>
+                        <li>Aqueles que são ou já foram assinantes da
+                            Hollow;
+                        </li>
+                        <li>Aqueles que já utilizaram o cupão uma vez.
+                        </li>
+                        <li>Os usuários terão de ser pessoas reais, com
+                            NIF e conta própria no Facebook; caso
+                            contrário, serão entendidos como robôs
+                        </li>
+                        <li>O indivíduo com o link poderá ter o seu
+                            cupão utilizado no máximo 5 vezes. Ou seja,
+                            tem um máximo de 25 dias de acesso gratuito.
+                        </li>
+                        <li>A Hollow tem o direito de cancelar o cupão
+                            de qualquer usuário que desrespeitar as
+                            regras
+                        </li>
+                    </ul>
                 </div>
+                
             </div>
         </div>
     </div>

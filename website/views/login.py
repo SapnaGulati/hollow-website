@@ -6,22 +6,9 @@ from django.views import generic
 from website.forms import UserRegistrationForm
 from website.models import User
 
-
 def error(request, message="Ooops! Aconteceu um erro, vamos investigar, desculpe por esse problema!"):
     # This special view is called everytime there is an error to display it into the browser
     return render(request, 'website/error.html', {'messages': request.messages, })
-
-
-class IndexView(generic.ListView):
-    template_name = 'website/index.html'
-
-    def index(request):
-        """"
-        Temporary solution while we do not construct the queryset method
-        """
-
-        return render(request, 'website/index.html')
-
 
 class RegisterView:
     def register(request):
@@ -92,28 +79,3 @@ class LogoutView(generic.ListView):
     def logout(request):
         logout(request)
         return HttpResponseRedirect('/')
-
-
-class ReferAndWinView(generic.ListView):
-    def as_view(request):
-        return render(request, 'website/referandwin.html')
-
-
-class HowItWorksView(generic.ListView):
-    def as_view(request):
-        return render(request, 'website/howitworks.html')
-
-
-class WhoWeAreView(generic.ListView):
-    def as_view(request):
-        return render(request, 'website/whoweare.html')
-
-
-class ContactView(generic.ListView):
-    def as_view(request):
-        return render(request, 'website/contact.html')
-
-
-class WorkWithUsView(generic.ListView):
-    def as_view(request):
-        return render(request, 'website/workwithus.html')
