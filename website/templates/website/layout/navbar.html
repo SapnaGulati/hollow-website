@@ -26,9 +26,9 @@
                                 {{ user.first_name }}
                                 <span class="caret"></span></button>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Mudar informações</a></li>
+                                <li><a href="{% url 'change_information' %}">Mudar informações</a></li>
                                 <li><a href="{% url 'user_profile' %}">Meu perfil</a></li>
-                                <li><a href="#">Mudar senha</a></li>
+                                <li><a href="{% url 'change_password' %}">Mudar senha</a></li>
                             </ul>
                         </div>
                     {% else %}
