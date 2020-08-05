@@ -9,132 +9,139 @@ Hollow - Homepage
 
 
 <section id="header">
-  <img src="{% static 'website/img/transforme_text.png' %}" id="transforme-bg">
-  <img src="{% static 'website/img/index_header_bg.png' %}" id="header-image-bg">
-  <div id="buttons">
-    <div style="padding-bottom:1.7vw">
-      <a class="button button-bg" href="{% url 'login' %}">Comece
-        agora!</a>
+    <img src="{% static 'website/img/transforme_text.png' %}" id="transforme-bg">
+    <img src="{% static 'website/img/index_header_bg.png' %}" id="header-image-bg">
+    <div id="buttons">
+        <div style="padding-bottom:1.7vw">
+            <a class="button button-bg" href="{% url 'login' %}">Comece
+                agora!</a>
+        </div>
+        <div>
+            <a class="button" href="{% url 'whoweare' %}">Saiba mais</a>
+        </div>
     </div>
-    <div>
-      <a class="button" href="{% url 'whoweare' %}">Saiba mais</a>
-    </div>
-  </div>
 </section>
 
 
-
 <section id="body-content-1"
-  style="background-image: url('{% static 'website/img/home_bg.png' %}');background-size:100%;">
+         style="background-image: url('{% static 'website/img/home_bg.png' %}');background-size:100%;">
 
-  <div class="video-section">
-    <iframe width="700" height="380" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </iframe>
-  </div>
+    <div class="video-section">
+        <iframe width="700" height="380" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </iframe>
+    </div>
 
-  <div id="content-row">
+    <div id="content-row">
 
-    <div class="card-content">
-      <div class="thefront">
-        <div class="card-title">
-          <p>Vídeo <br> Aulas</p>
+        <div class="card-content">
+            <div class="thefront">
+                <div class="card-title">
+                    <p>Vídeo <br> Aulas</p>
+                </div>
+                <img src="{% static 'website/img/pc_yellow.png' %}" class="imgs">
+            </div>
+
+            <div class="theback">
+                <p class="back-text">Vídeo aulas com o conteúdo totalmente focado na cadeira da sua faculdade. Serão
+                    curtas,
+                    específicas e precisas. Tudo o que o aluno precisa para entender.</p>
+            </div>
         </div>
-        <img src="{% static 'website/img/pc_yellow.png' %}" class="imgs">
-      </div>
 
-      <div class="theback">
-        <p class="back-text">Vídeo aulas com o conteúdo totalmente focado na cadeira da sua faculdade. Serão curtas,
-          específicas e precisas. Tudo o que o aluno precisa para entender.</p>
-      </div>
-    </div>
+        <div class="card-content">
+            <div class="thefront">
+                <div class="card-title">
+                    <p>FÓRUM <br>EM DIRETO <br>PRÉ PROVA</p>
+                </div>
+                <img src="{% static 'website/img/doubt_yellow.png' %}" class="imgs">
+            </div>
 
-    <div class="card-content">
-      <div class="thefront">
-        <div class="card-title">
-          <p>FÓRUM <br>EM DIRETO <br>PRÉ PROVA</p>
+            <div class="theback">
+                <p class="back-text">Fórum em direto pré prova para que o aluno possa esclarecer todas as suas dúvidas,
+                    fazer
+                    uma revisão e ir preparado para sua prova.</p>
+            </div>
         </div>
-        <img src="{% static 'website/img/doubt_yellow.png' %}" class="imgs">
-      </div>
 
-      <div class="theback">
-        <p class="back-text">Fórum em direto pré prova para que o aluno possa esclarecer todas as suas dúvidas, fazer
-          uma revisão e ir preparado para sua prova.</p>
-      </div>
-    </div>
+        <div class="card-content">
+            <div class="thefront">
+                <div>
+                    <p class="card-title">PROVAS E <br>EXERCÍCIOS<br>RESOLVIDOS</p>
+                </div>
+                <img src="{% static 'website/img/test_yellow.png' %}" class="imgs">
+            </div>
 
-    <div class="card-content">
-      <div class="thefront">
-        <div>
-          <p class="card-title">PROVAS E <br>EXERCÍCIOS<br>RESOLVIDOS</p>
+            <div class="theback">
+                <p class="back-text">Provas anteriores e exercícios resolvidos passo a passo para o aluno colocar toda a
+                    teoria
+                    aprendida em prática. As quantidades e variedades de exercícios são muitas.</p>
+            </div>
         </div>
-        <img src="{% static 'website/img/test_yellow.png' %}" class="imgs">
-      </div>
-
-      <div class="theback">
-        <p class="back-text">Provas anteriores e exercícios resolvidos passo a passo para o aluno colocar toda a teoria
-          aprendida em prática. As quantidades e variedades de exercícios são muitas.</p>
-      </div>
     </div>
-  </div>
 
-  <div id="sign-in">
-    <div id="sign-in-img">
-      <img src="{% static 'website/img/cardint.png' %}" style="width: 100%;">
+    <div id="sign-in">
+        <div id="sign-in-img">
+            <img src="{% static 'website/img/cardint.png' %}" style="width: 100%;">
 
-    </div>
-    <div id="sign-in-button-div">
-      <a id="sign-in-button" href="{% url 'login' %}">Comece já!</a>
-    </div>
-  </div>
-
-  <div id="our-courses-section">
-    <div id="our-courses">
-      <p class="card-title">NOSSOS CURSOS</p>
-      <div id="our-courses-info">
-        <img src="{% static 'website/img/pencil_yellow.png' %}" style="width:15%">
-        <div>
-          <p id="our-courses-text">
-            Macroeconomia I<br>
-            Microeconomia I<br>
-            Estatística I<br>
-            Matemática I
-          </p>
         </div>
-      </div>
+        <div id="sign-in-button-div">
+            <a id="sign-in-button" href="{% url 'login' %}">Comece já!</a>
+        </div>
     </div>
 
-    <div id="sugestion">
-      <div>
-        <p class="line-sugestion">Estamos construindo novos conteúdos constantemente.</p>
-        <p class="line-sugestion">Quer contribuir? Deixe aqui sua sugestão.</p>
-      </div>
-      <div id="sugestion-input-field">
-        <form action="">
-          <input type="text" id="sugestion-text" name="sugestion" value="Como aprender matemática por osmose?"><br>
-          <a href="" id="send-sugestion-button">Enviar</a>
-        </form>
-      </div>
+    <div id="our-courses-section">
+        <div id="our-courses">
+            <p class="card-title">NOSSOS CURSOS</p>
+            <div id="our-courses-info">
+                <img src="{% static 'website/img/pencil_yellow.png' %}" style="width:15%">
+                <div>
+                    <p id="our-courses-text">
+                        Macroeconomia I<br>
+                        Microeconomia I<br>
+                        Estatística I<br>
+                        Matemática I
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="sugestion">
+            <div class="d-flex flex-column">
+                <p class="line-sugestion">Estamos construindo novos conteúdos constantemente.</p>
+                <p class="line-sugestion">Quer contribuir? Deixe aqui sua sugestão.</p>
+            </div>
+            <center>
+                <div id="sugestion-input-field">
+                    <form action="">
+                        <input type="text" id="sugestion-text" name="sugestion"
+                               value="Como aprender matemática por osmose?"><br>
+                        <a href="" id="send-sugestion-button">Enviar</a>
+                    </form>
+                </div>
+            </center>
+        </div>
     </div>
-  </div>
 
-  <div id="sign_in_now">
-    <img src="{% static 'website/img/sign_in_now_img.png' %}" style="width: 90%;box-shadow: 2px 2px 5px #4d4c4d;">
+    <div id="sign_in_now">
+        <img src="{% static 'website/img/sign_in_now_img.png' %}" style="width: 90%;box-shadow: 2px 2px 5px #4d4c4d;">
 
-    <div id="sign-in-button-div2">
+        <div id="sign-in-button-div2">
 
-      <a id="sign-in-button2" style="padding: 1vw 4vw 1vw 4vw;" href="{% url 'login' %}">Comece já!</a>
+            <a id="sign-in-button2" style="padding: 1vw 4vw 1vw 4vw;" href="{% url 'login' %}">Comece já!</a>
+        </div>
     </div>
-  </div>
 
-  <div id="sign-in">
-    <div id="sign-in-img">
-      <img src="{% static 'website/img/refer_win.png' %}" style="width: 100%;">
+    <div id="sign-in">
+        <div id="sign-in-img">
+            <img src="{% static 'website/img/refer_win.png' %}" style="width: 100%;">
 
+        </div>
+        <div id="refer-button">
+            <a id="sign-in-button" href="{% url 'referandwin' %}">Convide um amigo</a>
+        </div>
     </div>
-    <div id="refer-button">
-      <a id="sign-in-button" href="{% url 'referandwin' %}">Convide um amigo</a>
-    </div>
-  </div>
 
 </section>
 
