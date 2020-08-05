@@ -1,35 +1,35 @@
 /* Header image with buttons */
-.header {
+.index-header {
   display: flex;
   align-items: center;
 }
 
-#header-image-bg {
+#index-header-image-bg {
   width: 100%;
 }
 
-#transforme-bg {
+#index-transforme-bg {
   width: 95%;
   position: absolute;
   margin-top: 13%;
   padding-left: 2.5%;
 }
 
-#buttons {
+#index-buttons {
   position: absolute;
   margin-top: -17%;
   width: 100%;
   text-align: center;
 }
 
-.button {
+.index-button {
   color: #4d4c4d;
   font-size: 1.5vw;
   font-weight: 500;
   text-shadow: 1px 1px 1px #4d4c4d;
 }
 
-.button-bg {
+.index-button-bg {
   background-color: #e8c854;
   padding: 1vw 2vw 1vw 2vw;
   border-radius: 1vw;
@@ -38,7 +38,7 @@
   box-shadow: 2px 2px 5px #4d4c4d;
 }
 
-.button-bg:hover {
+.index-button-bg:hover {
   background-color: #4d4c4d;
   padding: 1vw 2vw 1vw 2vw;
   text-decoration: none;
@@ -46,14 +46,14 @@
 }
 
 /* All page content */
-.body-content-1 {
+.index-body-content-1 {
   flex-direction: column;
   display: flex;
   width: 100%;
 }
 
 /* Video section */
-.video-section {
+.index-video-section {
   margin-top: 15%;
   margin-bottom: 15%;
 
@@ -61,13 +61,13 @@
   justify-content: center;
 }
 
-#video {
+#index-video {
   text-align: center;
   box-shadow: 4px 4px 7px #4d4c4d;
 }
 
 /* Cards section */
-#content-row {
+#index-content-row {
   width: 100%;
   height: 35vw;
   display: flex;
@@ -75,7 +75,7 @@
   justify-content: space-around;
 }
 
-.card-content {
+.index-card-content {
   align-items: center;
   width: 27%;
   height: 27vw;
@@ -87,11 +87,11 @@
   transition: all 0.3s ease;
 }
 
-.card-content:hover {
+.index-card-content:hover {
   transform: rotateY(180deg);
 }
 
-.thefront {
+.index-thefront {
   display: flex;
   box-shadow: 2px 2px 5px #858285;
   border-radius: 10px;
@@ -107,7 +107,7 @@
   justify-content: center;
 }
 
-.theback {
+.index-theback {
   display: flex;
   box-shadow: 2px 2px 5px #858285;
   position: absolute;
@@ -126,18 +126,18 @@
   transform: rotateY(180deg);
 }
 
-.imgs {
+.index-imgs {
   width: 30%;
 }
 
-.card-title {
+.index-card-title {
   text-align: center;
   font-size: 3vw;
   color: #f2c747ff;
   font-weight: bold;
 }
 
-.back-text {
+.index-back-text {
   text-align: center;
   margin: 8px;
   font-size: 2vw;
@@ -146,7 +146,7 @@
 }
 
 /* Sign in banner */
-#sign-in {
+#index-sign-in {
   display: flex;
   position: relative;
   width: 100%;
@@ -155,20 +155,20 @@
   margin-bottom: 7%;
 }
 
-#sign-in-img {
+#index-sign-in-img {
   position: relative;
   box-shadow: 2px 2px 5px #858285;
   width: 90%;
 }
 
-#sign-in-button-div {
+#index-sign-in-button-div {
   position: absolute;
   margin-right: 5vw;
   width: 90%;
   text-align: right;
 }
 
-#sign-in-button {
+#index-sign-in-button {
   color: #4d4c4d;
   font-size: 1.5vw;
   font-weight: 500;
@@ -181,7 +181,7 @@
   box-shadow: 2px 2px 5px #4d4c4d;
 }
 
-#sign-in-button:hover {
+#index-sign-in-button:hover {
   background-color: #4d4c4d;
   padding: 1vw 3vw 1vw 3vw;
   text-decoration: none;
@@ -189,7 +189,7 @@
 }
 
 /* Our courses and sugestion */
-#our-courses-section {
+#index-our-courses-section {
   display: flex;
   width: 100%;
   padding-left: 5%;
@@ -199,14 +199,14 @@
   margin-bottom: 7%;
 }
 
-#our-courses {
+#index-our-courses {
   display: flex;
   width: 45%;
   text-align: center;
   flex-direction: column;
 }
 
-#our-courses-info {
+#index-our-courses-info {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -214,20 +214,20 @@
   justify-content: space-evenly;
 }
 
-#our-courses-text {
+#index-our-courses-text {
   text-align: left;
   font-size: 1.5vw;
   color: #868589;
   font-weight: bold;
 }
 
-#sign-in-button-div2 {
+#index-sign-in-button-div2 {
   display: flex;
   position: absolute;
   bottom: 5vw;
 }
 
-#sign-in-button2 {
+#index-sign-in-button2 {
   color: #4d4c4d;
   font-size: 1.5vw;
   font-weight: 500;
@@ -240,7 +240,7 @@
   box-shadow: 2px 2px 5px #4d4c4d;
 }
 
-#sign-in-button2:hover {
+#index-sign-in-button2:hover {
   background-color: #4d4c4d;
   padding: 1vw 3vw 1vw 3vw;
   text-decoration: none;
@@ -249,7 +249,7 @@
 
 /*sugestion card*/
 
-#sugestion {
+#index-sugestion {
   display:inline-table;
   padding-top: 2vw;
   background-color: #f2c747ff;
@@ -260,7 +260,7 @@
   margin-top: 4vw;
 }
 
-.line-sugestion {
+.index-line-sugestion {
 
   letter-spacing: -0.03vw;
   width: 100%;
@@ -271,13 +271,13 @@
   font-family: League Spartan Bold;
 }
 
-#sugestion-input-field {
+#index-sugestion-input-field {
 
   text-align: center;
   width: 100%;
 }
 
-#sugestion-text {
+#index-sugestion-text {
   margin-top: 2vh;
   text-align: center;
   width: 27vw;
@@ -289,18 +289,18 @@
   font-family: League Spartan;
 }
 
-#send-sugestion-button {
+#index-send-sugestion-button {
 
   color: white;
   font-size: 1.5vw;
   text-decoration: none;
 }
-#send-sugestion-button:hover {
+#index-send-sugestion-button:hover {
   text-decoration: none;
 }
 
 /* Inscreva se ja */
-#sign_in_now {
+#index-sign_in_now {
   position: relative;
   display: flex;
   justify-content: center;
@@ -310,7 +310,7 @@
 }
 
 /* Refer and win */
-#refer-button {
+#index-refer-button {
   position: absolute;
   margin-top: 6vw;
   width: 90%;
