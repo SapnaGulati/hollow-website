@@ -5,6 +5,8 @@ from website import views
 
 urlpatterns = [
     path('', views.IndexView.index, name='index'),
+    path('user/', views.UserView.user, name='user_profile'),
+    path('user/<int:user_id>', views.UserView.user_profile),
     path('login/', views.LoginView.login, name='login'),
     path('logout/', views.LogoutView.logout, name='logout'),
     path('cadastro/', views.RegisterView.register_user, name='register'),
