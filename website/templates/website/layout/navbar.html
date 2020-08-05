@@ -20,6 +20,17 @@
                     <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Fale conosco</a></li>
                     {% if user.is_authenticated %}
                         <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Logout</a></li>
+
+                        <div class="dropdown yellow-hollow">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                {{ user.first_name }}
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'change_information' %}">Mudar informações</a></li>
+                                <li><a href="{% url 'user_profile' %}">Meu perfil</a></li>
+                                <li><a href="{% url 'change_password' %}">Mudar senha</a></li>
+                            </ul>
+                        </div>
                     {% else %}
                         <li class="nav-item"><a href="{% url 'register' %}" class="nav-link">Cadastro</a></li>
                         <li class="nav-item"><a href="{% url 'login' %}" class="nav-link yellow-hollow">Login</a></li>
