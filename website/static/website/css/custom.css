@@ -1,4 +1,7 @@
 /* your styles go here */
+/* importing index css into custom */
+
+@import "index.css";
 
 body {
     background-color: #fff !important;

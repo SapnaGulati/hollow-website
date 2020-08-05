@@ -54,7 +54,9 @@
 
 /* Video section */
 .video-section {
-  padding: 10% 10% 10% 10%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+
   display: flex;
   justify-content: center;
 }
