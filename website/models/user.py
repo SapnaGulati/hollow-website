@@ -75,8 +75,8 @@ class User(AbstractBaseUser):
 
     # META CLASS
     class Meta:
-        verbose_name = 'Utilisateur'
-        verbose_name_plural = 'Utilisateurs'
+        verbose_name = 'Usuário'
+        verbose_name_plural = 'Usuários'
 
     # TO STRING METHOD
     def __str__(self):
