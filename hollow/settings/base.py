@@ -116,3 +116,6 @@ STATICFILES_DIRS = [
 
 # For uploaded files
 MEDIA_ROOT = 'website/static/'
+
+# This will print the emails in Console
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
