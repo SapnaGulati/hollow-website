@@ -75,6 +75,22 @@
 
 {% include "website/layout/footer.html" %}
 
+{% block chatbox %}
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Fale com a Hollow</h1>
+
+    <label for="msg"><b>Mensagem</b></label>
+    <textarea placeholder="Escreva sua mensagem.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Enviar</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+  </form>
+</div>
+
+{% endblock chatbox %}
+
+
 {% block myjssheet %}{% endblock myjssheet %}
 
 <div id="scrollTop"><i class="fa fa-long-arrow-alt-up"></i></div>
