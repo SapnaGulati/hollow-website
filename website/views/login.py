@@ -6,9 +6,11 @@ from django.views import generic
 from website.forms import UserRegistrationForm
 from website.models import User
 
+
 def error(request, message="Ooops! Aconteceu um erro, vamos investigar, desculpe por esse problema!"):
     # This special view is called everytime there is an error to display it into the browser
     return render(request, 'website/error.html', {'messages': request.messages, })
+
 
 class RegisterView:
     def register(request):
@@ -17,19 +19,17 @@ class RegisterView:
     def register_user(request):
         context = {}
         if request.POST:
-            if 'user_registration' in request.POST:
-                form = UserRegistrationForm(request.POST, request.FILES or None)
-                if form.is_valid():
-                    incomplete_user = form.save(commit=False)
-                    incomplete_user.is_enterprise = False
-                    incomplete_user.is_active = False
-                    email = form.cleaned_data.get('email')
-                    raw_password = form.cleaned_data.get('password1')
-                    incomplete_user.save()
-                    login(request, incomplete_user, backend='django.contrib.auth.backends.ModelBackend')
-                    return redirect('login')
-                else:
-                    context['user_registration_form'] = form
+            form = UserRegistrationForm(request.POST, request.FILES or None)
+            if form.is_valid():
+                incomplete_user = form.save(commit=False)
+                incomplete_user.is_active = True
+                email = form.cleaned_data.get('email')
+                raw_password = form.cleaned_data.get('password1')
+                incomplete_user.save()
+                login(request, incomplete_user, backend='django.contrib.auth.backends.ModelBackend')
+                return redirect('login')
+            else:
+                context['user_registration_form'] = form
         else:
             user_form = UserRegistrationForm()
             context['user_registration_form'] = user_form
