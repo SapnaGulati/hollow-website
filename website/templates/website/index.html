@@ -8,30 +8,32 @@ Hollow - Homepage
 {% block content %}
 
 
-<section id="index-header" data-image-sr=>
-{#    <img src="{% static 'website/img/transforme_text.png' %}" id="index-transforme-bg">#}
-{#    <img src="{% static 'website/img/index_header_bg.png' %}" id="index-header-image-bg">#}
-    <div style="background: #f8d5cf;" class="item home-full-item"><img src="{% static 'website/img/index_header_bg.png' %}" alt="" class="bg-image">
-          <div class="container-fluid h-100 py-5">
-            <div class="row align-items-center h-100">
-              <div class="col-lg-8 col-xl-6 mx-auto text-white text-center">
-                  <img src="{% static 'website/img/transforme_text.png' %}" id="index-transforme-bg">
-{#                <h5 class="text-uppercase text-white font-weight-light mb-4 letter-spacing-5"> Just arrived</h5>#}
-{#                <h1 class="mb-5 display-2 font-weight-bold text-serif">Denim Jackets</h1>#}
-{#                <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>#}
-{#                <p> <a href="#" class="btn btn-light">View collection</a></p>#}
-              </div>
+<section>
+    <div style="background: #f8d5cf;" class="item home-full-item align-content-center">
+        <img src="{% static 'website/img/index_header_bg.png' %}" alt="" class="bg-image">
+        <div class="row">
+            <div class="container-fluid mx-0 position-absolute">
+                <img src="{% static 'website/img/transforme_text.png' %}" class="img-fluid text-center" alt="figure.">
             </div>
-          </div>
         </div>
-    <div id="index-buttons">
-        <div style="padding-bottom:1.7vw">
-            <a class="index-button index-button-bg" href="{% url 'login' %}">Comece
-                agora!</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+{#        TODO: Refactor later to delete all break points.#}
+        <div class="row">
+            <div class="container-fluid position-absolute text-center align-items-end">
+                <div class="container-fluid mb-3">
+                    <a class="index-button index-button-bg" href="{% url 'login' %}">Comece agora!</a>
+                </div>
+                <div class="container-fluid mb-2">
+                    <a class="index-button pt-3" href="{% url 'whoweare' %}">Saiba mais</a>
+                </div>
+            </div>
         </div>
-        <div>
-            <a class="index-button" href="{% url 'whoweare' %}">Saiba mais</a>
-        </div>
+
     </div>
 </section>
 
