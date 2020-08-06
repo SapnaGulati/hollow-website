@@ -6,7 +6,7 @@ from website import views
 urlpatterns = [
     path('', views.IndexView.index, name='index'),
     path('usuário/', views.UserView.user, name='user_profile'),
-    path('usuário/mudar-informações', views.ChangeInformationView.change_information, name='change_information'),
+    path('usuário/mudar-informações', views.ChangeUserInformationView.edit_profile, name='change_information'),
     path('usuário/mudar-senha', views.ChangePasswordView.changed_password, name='change_password'),
     path('usuário/<int:user_id>', views.UserView.user_profile),
     path('login/', views.LoginView.login, name='login'),
