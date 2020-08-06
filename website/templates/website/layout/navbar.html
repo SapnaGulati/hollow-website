@@ -17,7 +17,7 @@
                     <li class="nav-item"><a href="{% url 'referandwin' %}" class="nav-link ">Indique e ganhe</a></li>
                     <li class="nav-item"><a href="{% url 'howitworks' %}" class="nav-link yellow-hollow">Como
                         funciona</a></li>
-                    <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Fale conosco</a></li>
+                    <li class="nav-item"><a onclick="openForm()" class="nav-link">Fale conosco</a></li>
                     {% if user.is_authenticated %}
                         <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Logout</a></li>
 
