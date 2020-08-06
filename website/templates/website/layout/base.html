@@ -75,6 +75,15 @@
 
 
 {% include "website/layout/footer.html" %}
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 
 {% block chatbox %}
 <div class= "chat-popup" id="myForm">
