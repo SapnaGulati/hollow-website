@@ -7,6 +7,7 @@
     <!-- Custom stylesheet - for Code & Coffee 55 changes-->
     {% block mystylesheet %}
         <link rel="stylesheet" type="text/css" href="{% static 'website/css/custom.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'website/css/chatbox.css' %}">
     {% endblock mystylesheet %}
 
     <meta charset="utf-8">
@@ -76,7 +77,7 @@
 {% include "website/layout/footer.html" %}
 
 {% block chatbox %}
-<div class="chat-popup" id="myForm">
+<div class= "chat-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
     <h1>Fale com a Hollow</h1>
 
