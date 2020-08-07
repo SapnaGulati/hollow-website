@@ -38,8 +38,6 @@ INSTALLED_APPS = [
     'website.apps.WebsiteConfig',
     'phonenumber_field',
     'crispy_forms',
-    'widget_tweaks',
-    'bootstrapform'
 ]
 
 MIDDLEWARE = [
@@ -57,7 +55,7 @@ ROOT_URLCONF = 'hollow.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'website/templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -110,5 +108,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'website/static/'),
+]
+
 # For uploaded files
 MEDIA_ROOT = 'website/static/'
+
+# This will print the emails in Console
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"

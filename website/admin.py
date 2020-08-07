@@ -2,32 +2,25 @@ from django.contrib import admin
 
 from website.models import Course, Macrotopic, Microtopic, VideoLesson, ExerciseList
 
-# Register your models here.
-
 
 class CourseAdmin(admin.ModelAdmin):
     fields = ('macrotopic', 'title')
-    pass
 
 
 class MacrotopicAdmin(admin.ModelAdmin):
     fields = ('microtopic', 'exercise_list', 'title')
-    pass
 
 
 class MicrotopicAdmin(admin.ModelAdmin):
-    fields = ('importance' ,'video', 'title')
-    pass
+    fields = ('importance', 'video', 'title')
 
 
 class VideoLessonAdmin(admin.ModelAdmin):
     fields = ('duration', 'url', 'title')
-    pass
 
 
 class ExerciseListAdmin(admin.ModelAdmin):
     fields = ('url', 'title')
-    pass
 
 
 admin.site.register(Course, CourseAdmin)

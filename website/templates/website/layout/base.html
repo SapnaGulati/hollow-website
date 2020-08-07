@@ -7,6 +7,7 @@
     <!-- Custom stylesheet - for Code & Coffee 55 changes-->
     {% block mystylesheet %}
         <link rel="stylesheet" type="text/css" href="{% static 'website/css/custom.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'website/css/chatbox.css' %}">
     {% endblock mystylesheet %}
 
     <meta charset="utf-8">
@@ -74,6 +75,32 @@
 
 
 {% include "website/layout/footer.html" %}
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+{% block chatbox %}
+<div class= "form-popup" id="myForm">
+  <form action="/login" class="form-container">
+
+    <h1>Fale com a Hollow</h1>
+
+    <label for="msg"><b>Mensagem</b></label>
+    <textarea placeholder="Escreva sua mensagem.." name="msg" required></textarea>
+{# TODO: change action parameter of the form #}
+    <button type="submit" class="btn">Enviar</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+  </form>
+</div>
+
+{% endblock chatbox %}
+
 
 {% block myjssheet %}{% endblock myjssheet %}
 
