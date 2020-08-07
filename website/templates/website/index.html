@@ -9,7 +9,7 @@ Hollow - Homepage
 
 
 <section>
-    <div style="background: #f8d5cf;" class="item home-full-item align-content-center">
+    <div style="background: #f8d5cf; position" class="item home-full-item align-content-center" ,>
         <img src="{% static 'website/img/index_header_bg.png' %}" alt="" class="bg-image">
         <div class="row">
             <div class="container-fluid mx-0 position-absolute">
@@ -22,10 +22,10 @@ Hollow - Homepage
         <br>
         <br>
         <br>
-{#        TODO: Refactor later to delete all break points.#}
+        {# TODO: Refactor later to delete all break points.#}
         <div class="row">
-            <div class="container-fluid position-absolute text-center align-items-end">
-                <div class="container-fluid mb-3">
+            <div class="container-fluid position-absolute text-center align-items-end " , style="bottom: 5vh;">
+                <div class="container-fluid mb-3 ">
                     <a class="index-button index-button-bg" href="{% url 'login' %}">Comece agora!</a>
                 </div>
                 <div class="container-fluid mb-2">
@@ -33,6 +33,14 @@ Hollow - Homepage
                 </div>
             </div>
         </div>
+        <br>
+
+    </div>
+    <div class="index-video-section">
+        <iframe width="700" height="380" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
 
     </div>
 </section>
@@ -41,12 +49,6 @@ Hollow - Homepage
 <section id="index-body-content-1"
          style="background-image: url('{% static 'website/img/home_bg.png' %}');background-size:100%;">
 
-    <div class="index-video-section">
-        <iframe width="700" height="380" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </iframe>
-    </div>
 
     <div id="index-content-row">
 
@@ -59,7 +61,8 @@ Hollow - Homepage
             </div>
 
             <div class="index-theback">
-                <p class="index-back-text">Vídeo aulas com o conteúdo totalmente focado na cadeira da sua faculdade. Serão
+                <p class="index-back-text">Vídeo aulas com o conteúdo totalmente focado na cadeira da sua faculdade.
+                    Serão
                     curtas,
                     específicas e precisas. Tudo o que o aluno precisa para entender.</p>
             </div>
@@ -74,7 +77,8 @@ Hollow - Homepage
             </div>
 
             <div class="index-theback">
-                <p class="index-back-text">Fórum em direto pré prova para que o aluno possa esclarecer todas as suas dúvidas,
+                <p class="index-back-text">Fórum em direto pré prova para que o aluno possa esclarecer todas as suas
+                    dúvidas,
                     fazer
                     uma revisão e ir preparado para sua prova.</p>
             </div>
@@ -89,7 +93,8 @@ Hollow - Homepage
             </div>
 
             <div class="index-theback">
-                <p class="index-back-text">Provas anteriores e exercícios resolvidos passo a passo para o aluno colocar toda a
+                <p class="index-back-text">Provas anteriores e exercícios resolvidos passo a passo para o aluno colocar
+                    toda a
                     teoria
                     aprendida em prática. As quantidades e variedades de exercícios são muitas.</p>
             </div>

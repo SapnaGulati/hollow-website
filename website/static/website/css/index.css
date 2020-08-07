@@ -8,6 +8,10 @@
   width: 100%;
 }
 
+
+
+
+
 #index-transforme-bg {
   width: 95%;
   position: absolute;
@@ -47,6 +51,7 @@
 
 /* All page content */
 .index-body-content-1 {
+  position: relative;
   flex-direction: column;
   display: flex;
   width: 100%;
@@ -54,9 +59,7 @@
 
 /* Video section */
 .index-video-section {
-  margin-top: 15%;
   margin-bottom: 15%;
-
   display: flex;
   justify-content: center;
 }
