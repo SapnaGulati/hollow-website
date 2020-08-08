@@ -10,5 +10,32 @@
             <h1 class="align-self-center">{{ course.title }}</h1>
         </div>
     </div>
+    </br>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="list-group">
+                {% for macrotopic in course.macrotopic.all %}
+                <div class="list-group-item">
+                    <div>
+                        {{ macrotopic.title }}
+                    </div>
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            {% for microtopic in macrotopic.microtopic.all %}
+                                <div class="list-group-item">
+                                    {{ microtopic.title }}
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="list-group-item">
+                            {{ macrotopic.exercise_list }}
+                        </div>
+                    </div>
+
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 
 {% endblock content %}
