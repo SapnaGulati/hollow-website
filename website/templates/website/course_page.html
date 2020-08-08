@@ -31,9 +31,15 @@
                                 <div class="list-group-item">
                                     <div class="row justify-content-center">
                                         <div class="row col-md-12 align-content-center" style="height: 5vh">
+                                            <button class="btn btn-link"
+                                                    data-toggle="collapse"
+                                                    data-target="#collapse{{ microtopic.id }}-micro"
+                                                    aria-expanded="true"
+                                                    aria-controls="collapse{{ microtopic.id }}-micro">
                                             {{ microtopic.title }}
+                                            </button>
                                         </div>
-                                        <div class="col-md-10 justify-content-center">
+                                        <div class="col-md-10 justify-content-center collapse" id="collapse{{ microtopic.id }}-micro">
                                             <div class="embed-responsive embed-responsive-16by9 py-0 my-0">
                                                 <iframe class="embed-responsive-item" src="{{ microtopic.video.url }}"
                                                 allowfullscreen></iframe>
