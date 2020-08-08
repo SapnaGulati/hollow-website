@@ -13,5 +13,14 @@
 
 .hollow-font {
     font-family: League Spartan Bold; !important;
+}
 
+.without-side-border {
+    border-left: 0; !important;
+    border-right: 0; !important;
+    border-color: #7a7d7a; !important;
+}
+
+.without-bottom-border {
+    border-bottom: 0; !important;
 }

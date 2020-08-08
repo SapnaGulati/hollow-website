@@ -15,7 +15,7 @@
         <div class="col-md-8">
             <div class="list-group">
                 {% for macrotopic in course.macrotopic.all %}
-                <div class="list-group-item">
+                <div class="list-group-item without-side-border">
                     <div class="row col-md-12 align-content-center" style="height: 5vh">
                         <button class="btn btn-link-hollow"
                                 data-toggle="collapse"
@@ -29,7 +29,7 @@
                     <div class="col-md-12">
                         <div class="list-group collapse" id="collapse{{ macrotopic.id }}">
                             {% for microtopic in macrotopic.microtopic.all %}
-                                <div class="list-group-item">
+                                <div class="list-group-item without-side-border">
                                     <div class="row justify-content-center">
                                         <div class="row col-md-12 align-content-center" style="height: 5vh">
                                             <span class="row col-md-10 align-content-center">
@@ -60,7 +60,7 @@
                                     </div>
                                 </div>
                             {% endfor %}
-                        <div class="list-group-item">
+                        <div class="list-group-item without-side-border without-bottom-border">
                             <div class="row col-md-12 align-content-center" style="height: 5vh">
                             {{ macrotopic.exercise_list }}
                             </div>
