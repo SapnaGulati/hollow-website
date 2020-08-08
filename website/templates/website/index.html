@@ -7,162 +7,16 @@ Hollow - Homepage
 
 {% block content %}
 
-
 <section>
-    <div style="background: #f8d5cf; position" class="item home-full-item align-content-center" ,>
-        <img src="{% static 'website/img/index_header_bg.png' %}" alt="" class="bg-image">
-        <div class="row">
-            <div class="container-fluid mx-0 position-absolute">
-                <img src="{% static 'website/img/transforme_text.png' %}" class="img-fluid text-center" alt="figure.">
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        {# TODO: Refactor later to delete all break points.#}
-        <div class="row">
-            <div class="container-fluid position-absolute text-center align-items-end " , style="bottom: 5vh;">
-                <div class="container-fluid mb-3 ">
-                    <a class="index-button index-button-bg" href="{% url 'login' %}">Comece agora!</a>
-                </div>
-                <div class="container-fluid mb-2">
-                    <a class="index-button pt-3" href="{% url 'whoweare' %}">Saiba mais</a>
-                </div>
-            </div>
+    <div class="row index-main-image">
+        <img src="{% static 'website/img/index_header_bg.png' %}" class="col-12">
+        <div class="btn-group-vertical index-start-now-buttons">
+            <button class="btn btn-warning"><a href="">Começe já!</button>
+            <button class="btn btn-link">Saiba mais</button>
         </div>
     </div>
 
 </section>
 
-
-<section id="index-body-content-1"
-         style="background-image: url('{% static 'website/img/home_bg.png' %}');background-size:100%;">
-
-</section>
-<section style="margin-top:95vh;">
-    <div class="index-video-section">
-        <iframe width="700" height="380" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-        </iframe>
-
-    </div>
-    <div id="index-content-row">
-
-        <div class="index-card-content">
-            <div class="index-thefront">
-                <div class="index-card-title">
-                    <p>Vídeo <br> Aulas</p>
-                </div>
-                <img src="{% static 'website/img/pc_yellow.png' %}" class="index-imgs">
-            </div>
-
-            <div class="index-theback">
-                <p class="index-back-text">Vídeo aulas com o conteúdo totalmente focado na cadeira da sua faculdade.
-                    Serão
-                    curtas,
-                    específicas e precisas. Tudo o que o aluno precisa para entender.</p>
-            </div>
-        </div>
-
-        <div class="index-card-content">
-            <div class="index-thefront">
-                <div class="index-card-title">
-                    <p>FÓRUM <br>EM DIRETO <br>PRÉ PROVA</p>
-                </div>
-                <img src="{% static 'website/img/doubt_yellow.png' %}" class="index-imgs">
-            </div>
-
-            <div class="index-theback">
-                <p class="index-back-text">Fórum em direto pré prova para que o aluno possa esclarecer todas as suas
-                    dúvidas,
-                    fazer
-                    uma revisão e ir preparado para sua prova.</p>
-            </div>
-        </div>
-
-        <div class="index-card-content">
-            <div class="index-thefront">
-                <div>
-                    <p class="index-card-title">PROVAS E <br>EXERCÍCIOS<br>RESOLVIDOS</p>
-                </div>
-                <img src="{% static 'website/img/test_yellow.png' %}" class="index-imgs">
-            </div>
-
-            <div class="index-theback">
-                <p class="index-back-text">Provas anteriores e exercícios resolvidos passo a passo para o aluno colocar
-                    toda a
-                    teoria
-                    aprendida em prática. As quantidades e variedades de exercícios são muitas.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="index-sign-in">
-        <div class="index-sign-in-img">
-            <img src="{% static 'website/img/cardint.png' %}" style="width: 100%;">
-
-        </div>
-        <div id="index-sign-in-button-div">
-            <a class="index-sign-in-button" href="{% url 'login' %}">Comece já!</a>
-        </div>
-    </div>
-
-    <div id="index-our-courses-section">
-        <div id="index-our-courses">
-            <p class="index-card-title">NOSSOS CURSOS</p>
-            <div id="index-our-courses-info">
-                <img src="{% static 'website/img/pencil_yellow.png' %}" style="width:15%">
-                <div>
-                    <p id="index-our-courses-text">
-                        Macroeconomia I<br>
-                        Microeconomia I<br>
-                        Estatística I<br>
-                        Matemática I
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div id="index-sugestion">
-            <div class="d-flex flex-column">
-                <p class="index-line-sugestion">Estamos construindo novos conteúdos constantemente.</p>
-                <p class="index-line-sugestion">Quer contribuir? Deixe aqui sua sugestão.</p>
-            </div>
-            <center>
-                <div id="index-sugestion-input-field">
-                    <form action="">
-                        <input type="text" id="index-sugestion-text" name="sugestion"
-                               value="Como aprender matemática por osmose?"><br>
-                        <a href="" id="index-send-sugestion-button">Enviar</a>
-                    </form>
-                </div>
-            </center>
-        </div>
-    </div>
-
-    <div id="index-sign_in_now">
-        <img src="{% static 'website/img/sign_in_now_img.png' %}" style="width: 90%;box-shadow: 2px 2px 5px #4d4c4d;">
-
-        <div id="index-sign-in-button-div2">
-
-            <a id="index-sign-in-button2" style="padding: 1vw 4vw 1vw 4vw;" href="{% url 'login' %}">Comece já!</a>
-        </div>
-    </div>
-
-    <div class="index-sign-in">
-        <div class="index-sign-in-img">
-            <img src="{% static 'website/img/refer_win.png' %}" style="width: 100%;">
-
-        </div>
-        <div id="index-refer-button">
-            <a class="index-sign-in-button" href="{% url 'referandwin' %}">Convide um amigo</a>
-        </div>
-    </div>
-
-</section>
 
 {% endblock %}
