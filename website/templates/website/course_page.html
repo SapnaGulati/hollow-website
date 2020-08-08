@@ -4,5 +4,11 @@
 {% block title %}Hollow - Area de Cursos{% endblock title %}
 
 {% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/course.css' %}">
+    <div class="row justify-content-center">
+        <div class="row col-md-12 align-items-center justify-content-center" id="title-header">
+            <h1 class="align-self-center">{{ course.title }}</h1>
+        </div>
+    </div>
 
 {% endblock content %}
