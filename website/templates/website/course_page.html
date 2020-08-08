@@ -16,21 +16,21 @@
             <div class="list-group">
                 {% for macrotopic in course.macrotopic.all %}
                 <div class="list-group-item">
-                    <div>
+                    <div class="row col-md-12 align-content-center" style="height: 5vh">
                         {{ macrotopic.title }}
                     </div>
                     <div class="col-md-12">
                         <div class="list-group">
                             {% for microtopic in macrotopic.microtopic.all %}
                                 <div class="list-group-item">
-                                    <div row>
-                                        <div class="col-md-12">
+                                    <div class="row justify-content-center">
+                                        <div class="row col-md-12 align-content-center" style="height: 5vh">
                                             {{ microtopic.title }}
                                         </div>
-                                        <div class="col-md-12">
+                                        <div class="col-md-10 justify-content-center">
                                             <div class="embed-responsive embed-responsive-16by9 py-0 my-0">
-                                            <iframe class="embed-responsive-item" src="{{ microtopic.video.url }}"
-                                            allowfullscreen></iframe>
+                                                <iframe class="embed-responsive-item" src="{{ microtopic.video.url }}"
+                                                allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
@@ -38,7 +38,9 @@
                             {% endfor %}
                         </div>
                         <div class="list-group-item">
+                            <div class="row col-md-12 align-content-center" style="height: 5vh">
                             {{ macrotopic.exercise_list }}
+                            </div>
                         </div>
                     </div>
 
