@@ -1,0 +1,26 @@
+@font-face {
+    font-family: League Spartan Bold;
+    src: url('../fonts/LeagueSpartan-Bold.otf');
+}
+
+#title-header {
+    background-image: url('../img/course_header_bg.png');
+    background-repeat: no-repeat; background-size: cover;
+    background-position: center center;
+    height: 20vh;
+    color: #4a4a4a;
+}
+
+.hollow-font {
+    font-family: League Spartan Bold; !important;
+}
+
+.without-side-border {
+    border-left: 0; !important;
+    border-right: 0; !important;
+    border-color: #7a7d7a; !important;
+}
+
+.without-bottom-border {
+    border-bottom: 0; !important;
+}

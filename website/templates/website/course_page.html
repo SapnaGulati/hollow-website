@@ -1,0 +1,78 @@
+{% extends 'website/layout/base.html' %}
+{% load static %}
+
+{% block title %}Hollow - Area de Cursos{% endblock title %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/course.css' %}">
+    <div class="row justify-content-center">
+        <div class="row col-md-12 align-items-center justify-content-center" id="title-header">
+            <h1 class="align-self-center hollow-font">{{ course.title }}</h1>
+        </div>
+    </div>
+    </br>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="list-group">
+                {% for macrotopic in course.macrotopic.all %}
+                <div class="list-group-item without-side-border">
+                    <div class="row col-md-12 align-content-center" style="height: 5vh">
+                        <button class="btn btn-link-hollow"
+                                data-toggle="collapse"
+                                data-target="#collapse{{ macrotopic.id }}"
+                                aria-expanded="false"
+                                aria-controls="collapse{{ macrotopic.id }}">
+                            <span class="col-md-2">{{ forloop.counter }}</span>
+                            <span class="col-md-8">{{ macrotopic.title }}</span>
+                        </button>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="list-group collapse" id="collapse{{ macrotopic.id }}">
+                            {% for microtopic in macrotopic.microtopic.all %}
+                                <div class="list-group-item without-side-border">
+                                    <div class="row justify-content-center">
+                                        <div class="row col-md-12 align-content-center" style="height: 5vh">
+                                            <span class="row col-md-10 align-content-center">
+                                                <button class="btn btn-link-hollow"
+                                                        data-toggle="collapse"
+                                                        data-target="#collapse{{ microtopic.id }}-micro"
+                                                        aria-expanded="true"
+                                                        aria-controls="collapse{{ microtopic.id }}-micro">
+                                                {{ microtopic.title }}
+                                                </button>
+                                            </span>
+                                            <span class="row col align-content-center">
+                                                {{ microtopic.video.duration }}
+                                            </span>
+                                            <span class="row col align-content-center">
+                                                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-check-circle-fill yellow-hollow" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <div class="col-md-10 justify-content-center collapse" id="collapse{{ microtopic.id }}-micro">
+                                            <div class="embed-responsive embed-responsive-16by9 py-0 my-0">
+                                                <iframe class="embed-responsive-item" src="{{ microtopic.video.url }}"
+                                                allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        <div class="list-group-item without-side-border without-bottom-border">
+                            <div class="row col-md-12 align-content-center" style="height: 5vh">
+                            {{ macrotopic.exercise_list }}
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

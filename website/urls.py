@@ -19,9 +19,11 @@ urlpatterns = [
     path('quem-somos', views.WhoWeAreView.as_view, name='whoweare'),
     path('contato', views.ContactView.as_view, name='contact'),
     path('trabalhe-conosco', views.WorkWithUsView.as_view, name='workwithus'),
+    path('cursos', views.CoursesView.courses_view, name='all_courses'),
+    path('cursos/<int:course_id>/', views.CoursesView.as_view, name='courses'),
 
     # Forget Password
-    path('password-reset/',
+    path('password-rewset/',
          auth_views.PasswordResetView.as_view(
              template_name='website/commons/password-reset/password_reset.html',
              subject_template_name='website/commons/password-reset/password_reset_subject.txt',
