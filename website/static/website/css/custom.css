@@ -41,6 +41,10 @@ body {
     font-weight: bold;
 }
 
+.btn-link-hollow {
+    color: #858285; !important;
+}
+
 /* Hollow color for details*/
 
 .yellow-hollow {
