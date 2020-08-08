@@ -5,5 +5,25 @@
 
 .index-start-now-buttons {
   position: absolute !important;
-  top: 80%;
+  top: 75%;
+}
+
+.index-start-button {
+  border-radius: 10px !important;
+}
+
+.index-start-link {
+  font-size: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  color: black !important;
+  text-decoration: none;
+  font-family: Lucida monospace;
+  letter-spacing: 0.08vw !important;
+}
+
+.index-text-over-image {
+  position: absolute !important;
+  top: 15vw;
+  left: 0;
 }
