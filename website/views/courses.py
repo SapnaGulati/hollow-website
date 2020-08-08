@@ -11,3 +11,9 @@ class CoursesView(generic.ListView):
             "course": course
         }
         return render(request, 'website/course_page.html', context)
+
+    def courses_view(request):
+
+        courses = Course.objects.all()
+
+        return render(request, 'website/courses.html', {'courses': courses})
