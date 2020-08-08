@@ -23,7 +23,17 @@
                         <div class="list-group">
                             {% for microtopic in macrotopic.microtopic.all %}
                                 <div class="list-group-item">
-                                    {{ microtopic.title }}
+                                    <div row>
+                                        <div class="col-md-12">
+                                            {{ microtopic.title }}
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="embed-responsive embed-responsive-16by9 py-0 my-0">
+                                            <iframe class="embed-responsive-item" src="{{ microtopic.video.url }}"
+                                            allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             {% endfor %}
                         </div>
