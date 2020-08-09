@@ -31,19 +31,64 @@
 }
 
 /*end firts section*/
-.index-video {
-  position: relative;
-  height: 100vh;
-  text-align: center;
-  align-items: center;
+
+/* video section (second section)*/
+
+/* device screen's */
+@media (max-width: 768px) {
+  .index-video {
+    position: relative;
+    height: 70vh;
+    text-align: center;
+    align-items: center;
+  }
+
+  .index-video div {
+    height: 50%;
+  }
+
+  .col-12 iframe {
+    width: 75%;
+    height: 100%;
+  }
 }
 
-.col-12 {
-  height: 60%;
+/* For screens with aspcet radio 4:3 */
+@media (max-width: 1280px) and (min-width: 767px) {
+  .index-video {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+  }
+
+  .index-video div {
+    height: 80vh;
+  }
+
+  .col-12 iframe {
+    width: 80vh;
+    height: 100%;
+  }
 }
 
-.col-12 iframe {
-  width: 50%;
-  height: 100%;
+/*for screen's with aspect ration 16:10*/
+@media (min-width: 1281px) {
+  .index-video {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+  }
+
+  .index-video div {
+    height: 70%;
+  }
+
+  .col-12 iframe {
+    width: 55%;
+    height: 100%;
+  }
 }
+
 /*Video section (second section) */
