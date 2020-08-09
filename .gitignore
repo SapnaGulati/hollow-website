@@ -13,3 +13,6 @@
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+
+# The .env file SHOULD NOT be in version control
+/hollow/settings/.env
