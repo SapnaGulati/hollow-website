@@ -1,6 +1,7 @@
 {% extends 'website/layout/base.html' %}
 {% load static %}
 
+
 {% block title %}
 Hollow - Homepage
 {% endblock title %}
@@ -35,16 +36,32 @@ Hollow - Homepage
 <section>
     <div class="row justify-content-around">
         <div class="col-small">
-            <img src="{% static 'website/img/index/indextextbox1.png' %}" class="index-text-box">
+            <!--This img's tags has id's for javacript usage-->
+            <img src="{% static 'website/img/index/indextextbox1.png' %}" class="index-text-box" id="index-text-box1">
         </div>
         <div class="col-small">
-            <img src="{% static 'website/img/index/indextextbox2.png' %}" class="index-text-box">
+            <img src="{% static 'website/img/index/indextextbox2.png' %}" class="index-text-box" id="index-text-box2">
         </div>
         <div class="col-small">
-            <img src="{% static 'website/img/index/indextextbox3.png' %}" class="index-text-box">
+            <img src="{% static 'website/img/index/indextextbox3.png' %}" class="index-text-box" id="index-text-box3">
         </div>
 
 </section>
+
+<script>
+    var textBox1 = document.getElementById("index-text-box1");
+    textBox1.addEventListener("mouseover", () => {
+        if (
+            textBox1.src.match("{% static 'website/img/index/index_header_bg.png' %}")
+        ) {
+            textBox1.src = "{% static 'website/img/index/indextextbox1.png' %}";
+        } else {
+
+            textBox1.src = "{% static 'website/img/index/index_header_bg.png' %}";
+        }
+    });
+</script>
+
 
 
 {% endblock %}
